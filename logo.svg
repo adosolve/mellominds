@@ -1,0 +1,13 @@
+<svg width="300" height="80" viewBox="0 0 300 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Yellow M icon -->
+  <rect x="10" y="10" width="15" height="60" rx="7" fill="#FFD700"/>
+  <rect x="30" y="10" width="15" height="60" rx="7" fill="#FFD700"/>
+  <rect x="50" y="10" width="15" height="60" rx="7" fill="#FFD700"/>
+  
+  <!-- Text "ello" -->
+  <text x="80" y="55" font-family="Arial, sans-serif" font-size="36" font-weight="normal" fill="white">ello</text>
+  
+  <!-- "minds" in rounded rectangle -->
+  <rect x="200" y="20" width="90" height="40" rx="20" fill="white"/>
+  <text x="245" y="45" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#2D3748" text-anchor="middle">minds</text>
+</svg>
