@@ -1,5 +1,5 @@
 import React from 'react';
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/next';
 import ResponsiveLandingPage from './components/ResponsiveLandingPage';
 
 const App: React.FC = () => {
