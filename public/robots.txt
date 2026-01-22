@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mellominds.co.in/sitemap.xml
