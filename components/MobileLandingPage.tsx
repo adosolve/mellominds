@@ -7,7 +7,7 @@ const MobileLandingPage: React.FC = () => {
     <div className="relative h-screen flex flex-col overflow-hidden" style={{backgroundColor: '#082421'}}>
       
       {/* Main Content Area - Centered vertically */}
-      <main className="flex-1 flex flex-col justify-center items-center px-4 pb-8">
+      <main className="flex-1 flex flex-col justify-center items-center px-4 pb-8 -mt-8 sm:-mt-12">
         
         {/* Text Section */}
         <div className="flex flex-col items-center">
