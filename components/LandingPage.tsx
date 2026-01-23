@@ -48,7 +48,7 @@ const LandingPage: React.FC = () => {
 
       {/* Footer Text - Absolute bottom left */}
       <footer className="absolute bottom-4 left-6 md:left-12 text-[10px] md:text-xs text-white/50 z-20 font-medium">
-        © 2025 Mello Minds. All rights reserved.
+        © 2026 Mello Minds. All rights reserved.
       </footer>
 
       {/* Mascot Illustration - Fixed at bottom */}
