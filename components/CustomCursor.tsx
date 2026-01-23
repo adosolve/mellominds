@@ -1,27 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export const CustomCursor: React.FC = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const cursorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    let animationFrame: number;
-    let lastX = 0;
-    let lastY = 0;
-    
     const handleMouseMove = (e: MouseEvent) => {
-      lastX = e.clientX;
-      lastY = e.clientY;
-      
-      if (animationFrame) {
-        cancelAnimationFrame(animationFrame);
+      if (cursorRef.current) {
+        cursorRef.current.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%) scale(${isHovering ? 1.2 : 1})`;
       }
-      
-      animationFrame = requestAnimationFrame(() => {
-        setPosition({ x: lastX, y: lastY });
-        if (!isVisible) setIsVisible(true);
-      });
+      if (!isVisible) setIsVisible(true);
     };
 
     const handleMouseOver = (e: MouseEvent) => {
@@ -47,30 +36,26 @@ export const CustomCursor: React.FC = () => {
     window.addEventListener('mouseleave', handleMouseLeave, { passive: true });
 
     return () => {
-      if (animationFrame) {
-        cancelAnimationFrame(animationFrame);
-      }
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('mouseover', handleMouseOver);
       window.removeEventListener('mouseenter', handleMouseEnter);
       window.removeEventListener('mouseleave', handleMouseLeave);
     };
-  }, [isVisible]);
+  }, [isHovering, isVisible]);
 
   if (!isVisible) return null;
 
   return (
     <div
-      className="fixed pointer-events-none z-50 rounded-full bg-mello-yellow transition-all duration-150 ease-out will-change-transform"
+      ref={cursorRef}
+      className="fixed pointer-events-none z-50 rounded-full bg-mello-yellow transition-all duration-150 ease-out"
       style={{
-        left: position.x,
-        top: position.y,
+        left: 0,
+        top: 0,
         width: isHovering ? 40 : 20,
         height: isHovering ? 40 : 20,
         opacity: 0.7,
-        transform: `translate(-50%, -50%) scale(${isHovering ? 1.2 : 1})`,
-        backfaceVisibility: 'hidden',
-        perspective: 1000,
+        willChange: 'transform',
       }}
     />
   );
