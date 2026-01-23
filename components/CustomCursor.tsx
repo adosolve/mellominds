@@ -7,15 +7,20 @@ export const CustomCursor: React.FC = () => {
 
   useEffect(() => {
     let animationFrame: number;
+    let lastX = 0;
+    let lastY = 0;
     
     const handleMouseMove = (e: MouseEvent) => {
+      lastX = e.clientX;
+      lastY = e.clientY;
+      
       if (animationFrame) {
         cancelAnimationFrame(animationFrame);
       }
       
       animationFrame = requestAnimationFrame(() => {
-        setPosition({ x: e.clientX, y: e.clientY });
-        setIsVisible(true);
+        setPosition({ x: lastX, y: lastY });
+        if (!isVisible) setIsVisible(true);
       });
     };
 
@@ -28,23 +33,29 @@ export const CustomCursor: React.FC = () => {
       }
     };
 
+    const handleMouseEnter = () => {
+      setIsVisible(true);
+    };
+
     const handleMouseLeave = () => {
       setIsVisible(false);
     };
 
-    document.addEventListener('mousemove', handleMouseMove, { passive: true });
-    document.addEventListener('mouseover', handleMouseOver, { passive: true });
-    document.addEventListener('mouseleave', handleMouseLeave, { passive: true });
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
+    window.addEventListener('mouseover', handleMouseOver, { passive: true });
+    window.addEventListener('mouseenter', handleMouseEnter, { passive: true });
+    window.addEventListener('mouseleave', handleMouseLeave, { passive: true });
 
     return () => {
       if (animationFrame) {
         cancelAnimationFrame(animationFrame);
       }
-      document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseover', handleMouseOver);
-      document.removeEventListener('mouseleave', handleMouseLeave);
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseover', handleMouseOver);
+      window.removeEventListener('mouseenter', handleMouseEnter);
+      window.removeEventListener('mouseleave', handleMouseLeave);
     };
-  }, []);
+  }, [isVisible]);
 
   if (!isVisible) return null;
 
