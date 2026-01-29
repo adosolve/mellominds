@@ -40,7 +40,7 @@ const MobileLandingPage: React.FC = () => {
           
           {/* Footer Text - Right below headline */}
           <div className="mt-16 text-xs text-white/50 font-medium text-center">
-            © 2026 Mello Minds. All rights reserved.
+            © 2026 MelloMinds. All rights reserved.
           </div>
         
         </div>

@@ -5,7 +5,7 @@ export const Logo: React.FC<{ className?: string }> = ({ className = "" }) => {
     <div className={className}>
       <img 
         src="/Images/Frame 2 1.png" 
-        alt="Mello Minds" 
+        alt="MelloMinds" 
         className="h-12 md:h-16 w-auto object-contain"
       />
     </div>
