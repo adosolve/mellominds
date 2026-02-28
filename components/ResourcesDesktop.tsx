@@ -24,7 +24,7 @@ const ResourcesDesktop: React.FC = () => {
                 </a>
               </nav>
               <a 
-                href="https://app.mellominds.co.in" 
+                href="/contact" 
                 className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
               >
                 Get early access →

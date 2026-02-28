@@ -24,7 +24,7 @@ const FeaturesDesktop: React.FC = () => {
                 </a>
               </nav>
               <a 
-                href="https://app.mellominds.co.in" 
+                href="/contact" 
                 className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
               >
                 Get early access →
@@ -41,50 +41,93 @@ const FeaturesDesktop: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
-            <div className="text-4xl mb-4">📅</div>
-            <h3 className="text-2xl font-bold text-mello-yellow mb-3">Smart Scheduling</h3>
+            <div className="w-full rounded-[20px] mb-4 overflow-hidden">
+              <img src="/Images/2 2.png" alt="Security & Compliance" className="w-full h-auto" />
+            </div>
+            <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
+              <h3 className="text-2xl font-bold text-mello-yellow">Security & Compliance</h3>
+              <h4 className="text-lg font-semibold text-white/90">Zero-Knowledge Encryption & ABDM Compliance</h4>
+            </div>
             <p className="text-white/80 leading-relaxed">
-              Effortlessly manage appointments with intelligent scheduling, automated reminders, and calendar sync. Never miss a session again.
+              Rest assured that your practice meets the highest digital safety standards. We utilize Zero-Knowledge encryption, which means your client data is encrypted before it touches our servers our tech team ensure its mathematically impossible for us or anyone else to view it. Full ABDM compliance further establishes your credibility within the digital health ecosystem.
             </p>
           </div>
 
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
-            <div className="text-4xl mb-4">📝</div>
-            <h3 className="text-2xl font-bold text-mello-yellow mb-3">Digital Intake Forms</h3>
+            <div className="w-full rounded-[20px] mb-4 overflow-hidden">
+              <img src="/Images/3 3071.png" alt="Clinical Workflow" className="w-full h-auto" />
+            </div>
+            <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
+              <h3 className="text-2xl font-bold text-mello-yellow">Clinical Workflow</h3>
+              <h4 className="text-lg font-semibold text-white/90">Comprehensive Client Management & Clinical Notes</h4>
+            </div>
             <p className="text-white/80 leading-relaxed">
-              Streamline client onboarding with customizable digital intake forms. Collect and organize information securely before the first session.
+              Access a dedicated workspace for every client, featuring case histories, session logs, and an activity suggestion engine that automatically notifies clients of new tasks. Speed up your documentation by using our standardized industry-compliant note templates, or create your own custom templates to match your therapy style.
             </p>
           </div>
 
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
-            <div className="text-4xl mb-4">🔒</div>
-            <h3 className="text-2xl font-bold text-mello-yellow mb-3">HIPAA-Compliant Notes</h3>
+            <div className="w-full rounded-[20px] mb-4 overflow-hidden">
+              <img src="/Images/5 137477988.png" alt="Finance & Billing" className="w-full h-auto" />
+            </div>
+            <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
+              <h3 className="text-2xl font-bold text-mello-yellow">Finance & Billing</h3>
+              <h4 className="text-lg font-semibold text-white/90">Integrated Payments & Automated Invoicing</h4>
+            </div>
             <p className="text-white/80 leading-relaxed">
-              Create, store, and manage session notes with enterprise-grade security. Full HIPAA compliance ensures client confidentiality.
+              Generate professional invoices instantly and integrate your preferred payment gateway directly into the platform, allowing for seamless, secure transaction tracking that keeps your practice's cash flow healthy.
             </p>
           </div>
 
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
-            <div className="text-4xl mb-4">💳</div>
-            <h3 className="text-2xl font-bold text-mello-yellow mb-3">Billing & Payments</h3>
+            <div className="w-full rounded-[20px] mb-4 overflow-hidden">
+              <img src="/Images/4 7589.png" alt="Scheduling" className="w-full h-auto" />
+            </div>
+            <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
+              <h3 className="text-2xl font-bold text-mello-yellow">Scheduling</h3>
+              <h4 className="text-lg font-semibold text-white/90">Smart Multi-Service Calendar & Google Sync</h4>
+            </div>
             <p className="text-white/80 leading-relaxed">
-              Simplify invoicing and payment processing. Accept payments online, track outstanding balances, and generate financial reports.
+              Organize your time effectively by creating distinct calendar resources for specific services (e.g. Individual Therapy, Couples Counseling, ADHD Assessment). Full two-way synchronization with Google Calendar ensures your personal and professional schedules never conflict.
             </p>
           </div>
 
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
-            <div className="text-4xl mb-4">📊</div>
-            <h3 className="text-2xl font-bold text-mello-yellow mb-3">Analytics & Insights</h3>
+            <div className="w-full rounded-[20px] mb-4 overflow-hidden">
+              <img src="/Images/6 333899.png" alt="Client Acquisition" className="w-full h-auto" />
+            </div>
+            <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
+              <h3 className="text-2xl font-bold text-mello-yellow">Client Acquisition</h3>
+              <h4 className="text-lg font-semibold text-white/90">Sharable Booking Profile</h4>
+            </div>
             <p className="text-white/80 leading-relaxed">
-              Track practice growth with detailed analytics. Monitor client retention, session trends, and revenue metrics at a glance.
+              Eliminate the back-and-forth of scheduling. You get a professional, sharable profile link that showcases your expertise and real-time availability, allowing existing and potential clients to book sessions with you instantly and securely.
             </p>
           </div>
 
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
-            <div className="text-4xl mb-4">🔔</div>
-            <h3 className="text-2xl font-bold text-mello-yellow mb-3">Automated Reminders</h3>
+            <div className="w-full rounded-[20px] mb-4 overflow-hidden">
+              <img src="/Images/9.png" alt="Automation" className="w-full h-auto" />
+            </div>
+            <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
+              <h3 className="text-2xl font-bold text-mello-yellow">Automation</h3>
+              <h4 className="text-lg font-semibold text-white/90">Appointment Command Center & Reminders</h4>
+            </div>
             <p className="text-white/80 leading-relaxed">
-              Reduce no-shows with automated email and SMS reminders. Keep clients informed and engaged with timely notifications.
+              Reduce no-shows and keep your day running smoothly. Manage all upcoming sessions from a single view where the system automatically handles the busy work of sending timely appointment reminders to your clients on your behalf.
+            </p>
+          </div>
+
+          <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
+            <div className="w-full rounded-[20px] mb-4 overflow-hidden">
+              <img src="/Images/1 1.png" alt="Ease of Use" className="w-full h-auto" />
+            </div>
+            <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
+              <h3 className="text-2xl font-bold text-mello-yellow">Ease of Use</h3>
+              <h4 className="text-lg font-semibold text-white/90">Zero-Tech Control Center</h4>
+            </div>
+            <p className="text-white/80 leading-relaxed">
+              You are a therapist, not an IT manager. MelloMinds is designed with a "No-Code" philosophy, giving you a centralized dashboard that is intuitive and easy to navigate, allowing you to operate your entire digital practice without any technical knowledge.
             </p>
           </div>
 
@@ -95,7 +138,7 @@ const FeaturesDesktop: React.FC = () => {
           <h2 className="text-3xl font-bold text-mello-light mb-4">Ready to transform your practice?</h2>
           <p className="text-white/80 mb-8 text-lg">Join therapists who are already using MelloMinds to streamline their workflow.</p>
           <a 
-            href="https://app.mellominds.co.in" 
+            href="/contact" 
             className="inline-block bg-mello-yellow text-mello-bg px-8 py-4 rounded-full font-bold text-lg hover:bg-mello-yellow/90 transition-colors shadow-lg"
           >
             Get early access →

@@ -45,7 +45,7 @@ const MobileLandingPage: React.FC = () => {
           {/* Get Early Access Button */}
           <div className="mt-8">
             <a 
-              href="https://app.mellominds.co.in" 
+              href="/contact" 
               className="bg-mello-yellow text-mello-bg px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-mello-yellow/90 transition-colors shadow-lg inline-block"
             >
               Get early access →
