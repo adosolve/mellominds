@@ -7,9 +7,17 @@ const TermsOfService: React.FC = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <header className="mb-12">
-          <a href="/" className="inline-block mb-8 hover:opacity-80 transition-opacity">
-            <Logo />
-          </a>
+          <div className="flex items-start justify-between mb-8">
+            <a href="/" className="inline-block hover:opacity-80 transition-opacity">
+              <Logo />
+            </a>
+            <a 
+              href="https://app.mellominds.co.in" 
+              className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
+            >
+              Login / Sign Up
+            </a>
+          </div>
           <h1 className="text-4xl md:text-5xl font-black text-mello-light mb-4">Terms of Service</h1>
           <p className="text-white/70">Effective Date: February 28, 2026</p>
         </header>
