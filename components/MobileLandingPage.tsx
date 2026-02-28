@@ -5,16 +5,6 @@ import { Mascot } from './Mascot';
 const MobileLandingPage: React.FC = () => {
   return (
     <div className="relative h-screen flex flex-col overflow-hidden" style={{backgroundColor: '#082421'}}>
-      
-      {/* Header with Login Button */}
-      <header className="absolute top-4 right-4 z-30">
-        <a 
-          href="https://app.mellominds.co.in" 
-          className="bg-mello-yellow text-mello-bg px-4 py-2 rounded-full font-semibold text-sm hover:bg-mello-yellow/90 transition-colors shadow-lg"
-        >
-          Login / Sign Up
-        </a>
-      </header>
 
       {/* Main Content Area - Centered vertically */}
       <main className="flex-1 flex flex-col justify-center items-center px-4 pb-8 -mt-8 sm:-mt-12">
@@ -48,7 +38,17 @@ const MobileLandingPage: React.FC = () => {
             </div>
           </div>
           
-          {/* Footer Text - Right below headline */}
+          {/* Get Early Access Button */}
+          <div className="mt-8">
+            <a 
+              href="https://app.mellominds.co.in" 
+              className="bg-mello-yellow text-mello-bg px-6 py-3 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg inline-block"
+            >
+              Get early access →
+            </a>
+          </div>
+          
+          {/* Footer Text - Right below button */}
           <div className="mt-16 text-xs text-white/50 font-medium text-center">
             <div className="flex flex-col items-center gap-2">
               <span>© 2026 MelloMinds. All rights reserved.</span>

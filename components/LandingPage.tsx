@@ -15,7 +15,7 @@ const LandingPage: React.FC = () => {
           href="https://app.mellominds.co.in" 
           className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
         >
-          Login / Sign Up
+          Get early access →
         </a>
       </header>
 
