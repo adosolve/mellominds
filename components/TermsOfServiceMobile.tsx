@@ -1,23 +1,14 @@
 import React from 'react';
-import { Logo } from './Logo';
+import { MobileHeader } from './MobileHeader';
 
 const TermsOfServiceMobile: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#082421] text-white px-6 py-8 md:px-12 md:py-12">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <header className="mb-12">
-          <div className="flex items-start justify-between mb-8">
-            <a href="/" className="inline-block hover:opacity-80 transition-opacity">
-              <Logo />
-            </a>
-            <a 
-              href="https://app.mellominds.co.in" 
-              className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
-            >
-              Get early access →
-            </a>
-          </div>
+        <MobileHeader currentPage="terms" />
+        
+        <header className="mb-12 mt-20">
           <h1 className="text-4xl md:text-5xl font-black text-mello-light mb-4">Terms of Service</h1>
           <p className="text-white/70">Effective Date: February 28, 2026</p>
         </header>

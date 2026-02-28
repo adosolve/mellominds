@@ -1,23 +1,20 @@
 import React from 'react';
 import { Logo } from './Logo';
 import { Mascot } from './Mascot';
+import { MobileHeader } from './MobileHeader';
 
 const MobileLandingPage: React.FC = () => {
   return (
     <div className="relative h-screen flex flex-col overflow-hidden" style={{backgroundColor: '#082421'}}>
+      
+      {/* Header with Logo and Hamburger Menu */}
+      <MobileHeader currentPage="home" />
 
       {/* Main Content Area - Centered vertically */}
       <main className="flex-1 flex flex-col justify-center items-center px-4 pb-8 -mt-8 sm:-mt-12">
         
         {/* Text Section */}
         <div className="flex flex-col items-center">
-          
-          {/* Logo */}
-          <div className="mb-12 sm:mb-16">
-            <a href="/" className="inline-block">
-              <Logo className="scale-110" />
-            </a>
-          </div>
           
           {/* Text Group - No gap between greeting and headline */}
           <div className="flex flex-col items-center space-y-2">
@@ -49,7 +46,7 @@ const MobileLandingPage: React.FC = () => {
           <div className="mt-8">
             <a 
               href="https://app.mellominds.co.in" 
-              className="bg-mello-yellow text-mello-bg px-6 py-3 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg inline-block"
+              className="bg-mello-yellow text-mello-bg px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-mello-yellow/90 transition-colors shadow-lg inline-block"
             >
               Get early access →
             </a>

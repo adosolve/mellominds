@@ -1,23 +1,14 @@
 import React from 'react';
-import { Logo } from './Logo';
+import { MobileHeader } from './MobileHeader';
 
 const ResourcesMobile: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#082421] text-white px-6 py-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <header className="mb-12">
-          <div className="flex items-center justify-between mb-8">
-            <a href="/" className="inline-block">
-              <Logo />
-            </a>
-            <a 
-              href="https://app.mellominds.co.in" 
-              className="bg-mello-yellow text-mello-bg px-4 py-2 rounded-full font-semibold text-sm hover:bg-mello-yellow/90 transition-colors shadow-lg"
-            >
-              Get early access →
-            </a>
-          </div>
+        <MobileHeader currentPage="resources" />
+        
+        <header className="mb-12 mt-20">
           <div className="text-center">
             <h1 className="text-4xl font-black text-mello-light mb-3">Resources</h1>
             <p className="text-lg text-white/70">Guides, articles, and tools to help you succeed</p>
