@@ -42,7 +42,7 @@ const FeaturesDesktop: React.FC = () => {
           
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
             <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/2 2.png" alt="Security & Compliance" className="w-full h-auto" />
+              <img src="/Images/2-2.png" alt="Security & Compliance" className="w-full h-auto" />
             </div>
             <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
               <h3 className="text-2xl font-bold text-mello-yellow">Security & Compliance</h3>
@@ -55,7 +55,7 @@ const FeaturesDesktop: React.FC = () => {
 
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
             <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/3 3071.png" alt="Clinical Workflow" className="w-full h-auto" />
+              <img src="/Images/3-3071.png" alt="Clinical Workflow" className="w-full h-auto" />
             </div>
             <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
               <h3 className="text-2xl font-bold text-mello-yellow">Clinical Workflow</h3>
@@ -68,7 +68,7 @@ const FeaturesDesktop: React.FC = () => {
 
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
             <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/5 137477988.png" alt="Finance & Billing" className="w-full h-auto" />
+              <img src="/Images/5-137477988.png" alt="Finance & Billing" className="w-full h-auto" />
             </div>
             <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
               <h3 className="text-2xl font-bold text-mello-yellow">Finance & Billing</h3>
@@ -81,7 +81,7 @@ const FeaturesDesktop: React.FC = () => {
 
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
             <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/4 7589.png" alt="Scheduling" className="w-full h-auto" />
+              <img src="/Images/4-7589.png" alt="Scheduling" className="w-full h-auto" />
             </div>
             <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
               <h3 className="text-2xl font-bold text-mello-yellow">Scheduling</h3>
@@ -94,7 +94,7 @@ const FeaturesDesktop: React.FC = () => {
 
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
             <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/6 333899.png" alt="Client Acquisition" className="w-full h-auto" />
+              <img src="/Images/6-333899.png" alt="Client Acquisition" className="w-full h-auto" />
             </div>
             <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
               <h3 className="text-2xl font-bold text-mello-yellow">Client Acquisition</h3>
@@ -120,7 +120,7 @@ const FeaturesDesktop: React.FC = () => {
 
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-colors">
             <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/1 1.png" alt="Ease of Use" className="w-full h-auto" />
+              <img src="/Images/1-1.png" alt="Ease of Use" className="w-full h-auto" />
             </div>
             <div className="bg-mello-yellow/10 rounded-xl p-4 mb-4">
               <h3 className="text-2xl font-bold text-mello-yellow">Ease of Use</h3>
