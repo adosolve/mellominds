@@ -9,8 +9,14 @@ const LandingPage: React.FC = () => {
       <CustomCursor />
       
       {/* Header / Logo */}
-      <header className="w-full mb-24 md:mb-32">
+      <header className="w-full mb-24 md:mb-32 flex items-center justify-between">
         <Logo />
+        <a 
+          href="https://app.mellominds.co.in" 
+          className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
+        >
+          Login / Sign Up
+        </a>
       </header>
 
       {/* Main Content Area */}
@@ -46,9 +52,16 @@ const LandingPage: React.FC = () => {
 
       </main>
 
-      {/* Footer Text - Absolute bottom left */}
-      <footer className="absolute bottom-4 left-6 md:left-12 text-[10px] md:text-xs text-white/50 z-20 font-medium">
-        © 2026 MelloMinds. All rights reserved.
+      {/* Footer Text - Absolute bottom */}
+      <footer className="absolute bottom-4 left-6 md:left-12 right-6 md:right-12 text-[10px] md:text-xs text-white/50 z-20 font-medium">
+        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
+          <span>© 2026 MelloMinds. All rights reserved.</span>
+          <div className="flex items-center gap-x-4">
+            <a href="/privacy-policy" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
+            <span>•</span>
+            <a href="/terms-of-service" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
+          </div>
+        </div>
       </footer>
 
       {/* Mascot Illustration - Fixed at bottom */}

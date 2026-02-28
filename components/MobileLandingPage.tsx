@@ -6,6 +6,16 @@ const MobileLandingPage: React.FC = () => {
   return (
     <div className="relative h-screen flex flex-col overflow-hidden" style={{backgroundColor: '#082421'}}>
       
+      {/* Header with Login Button */}
+      <header className="absolute top-4 right-4 z-30">
+        <a 
+          href="https://app.mellominds.co.in" 
+          className="bg-mello-yellow text-mello-bg px-4 py-2 rounded-full font-semibold text-sm hover:bg-mello-yellow/90 transition-colors shadow-lg"
+        >
+          Login / Sign Up
+        </a>
+      </header>
+
       {/* Main Content Area - Centered vertically */}
       <main className="flex-1 flex flex-col justify-center items-center px-4 pb-8 -mt-8 sm:-mt-12">
         
@@ -40,7 +50,14 @@ const MobileLandingPage: React.FC = () => {
           
           {/* Footer Text - Right below headline */}
           <div className="mt-16 text-xs text-white/50 font-medium text-center">
-            © 2026 MelloMinds. All rights reserved.
+            <div className="flex flex-col items-center gap-2">
+              <span>© 2026 MelloMinds. All rights reserved.</span>
+              <div className="flex items-center gap-2">
+                <a href="/privacy-policy" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
+                <span>•</span>
+                <a href="/terms-of-service" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
+              </div>
+            </div>
           </div>
         
         </div>
