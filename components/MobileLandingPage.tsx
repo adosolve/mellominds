@@ -13,8 +13,10 @@ const MobileLandingPage: React.FC = () => {
         <div className="flex flex-col items-center">
           
           {/* Logo */}
-          <div className="mb-8">
-            <Logo className="scale-110" />
+          <div className="mb-12 sm:mb-16">
+            <a href="/" className="inline-block">
+              <Logo className="scale-110" />
+            </a>
           </div>
           
           {/* Text Group - No gap between greeting and headline */}
@@ -25,17 +27,22 @@ const MobileLandingPage: React.FC = () => {
             </h2>
 
             {/* Main Headline Group */}
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mb-3">
               {/* Line 1: FUTURE OF THERAPY */}
-              <h1 className="leading-none font-black tracking-tight text-mello-dim uppercase text-center text-2xl sm:text-3xl">
+              <h1 className="leading-none font-black tracking-tight text-mello-dim uppercase text-center text-3xl sm:text-4xl">
                 FUTURE OF THERAPY
               </h1>
               
               {/* Line 2: PRACTICE MANAGEMENT */}
-              <h1 className="leading-none font-black tracking-tight text-mello-light uppercase text-center text-2xl sm:text-3xl">
+              <h1 className="leading-none font-black tracking-tight text-mello-light uppercase text-center text-3xl sm:text-4xl">
                 PRACTICE MANAGEMENT
               </h1>
             </div>
+
+            {/* Subheading */}
+            <p className="text-white/80 text-xs sm:text-sm text-center max-w-md px-4 leading-relaxed">
+              We believe that therapists deserve the same care and support they give their clients.
+            </p>
           </div>
           
           {/* Get Early Access Button */}

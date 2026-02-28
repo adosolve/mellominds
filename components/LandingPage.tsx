@@ -10,13 +10,28 @@ const LandingPage: React.FC = () => {
       
       {/* Header / Logo */}
       <header className="w-full mb-24 md:mb-32 flex items-center justify-between">
-        <Logo />
-        <a 
-          href="https://app.mellominds.co.in" 
-          className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
-        >
-          Get early access →
+        <a href="/" className="inline-block">
+          <Logo />
         </a>
+        <div className="flex items-center gap-4">
+          <nav className="hidden md:flex items-center gap-1 bg-white rounded-full px-2 py-2">
+            <a href="/features" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
+              Features
+            </a>
+            <a href="/resources" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
+              Resources
+            </a>
+            <a href="/contact" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
+              Contact Us
+            </a>
+          </nav>
+          <a 
+            href="https://app.mellominds.co.in" 
+            className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
+          >
+            Get early access →
+          </a>
+        </div>
       </header>
 
       {/* Main Content Area */}
@@ -26,27 +41,32 @@ const LandingPage: React.FC = () => {
         <div className="flex flex-col">
           
           {/* Greeting Line */}
-          <h2 className="font-medium text-white flex items-center gap-3 md:gap-4 mb-2" style={{fontSize: '62px'}}>
-            Say <span className="text-3xl md:text-5xl animate-pulse">👋</span> hello to <span className="text-mello-yellow font-bold">mello!</span>
+          <h2 className="font-medium text-white flex items-center gap-3 md:gap-4 mb-2 text-4xl md:text-5xl">
+            Say <span className="text-2xl md:text-3xl animate-pulse">👋</span> hello to <span className="text-mello-yellow font-bold">mello!</span>
           </h2>
 
           {/* Main Headline Group */}
-          <div className="flex flex-col">
+          <div className="flex flex-col mb-4">
             {/* Line 1: FUTURE OF THERAPY */}
             <div className="flex flex-wrap items-baseline gap-x-4 md:gap-x-6">
-              <span className="leading-none font-black tracking-tight text-mello-dim uppercase" style={{fontSize: '72px'}}>
+              <span className="leading-none font-black tracking-tight text-mello-dim uppercase text-5xl md:text-6xl">
                 FUTURE OF
               </span>
-              <span className="leading-none font-black tracking-tight text-mello-light uppercase" style={{fontSize: '72px'}}>
+              <span className="leading-none font-black tracking-tight text-mello-light uppercase text-5xl md:text-6xl">
                 THERAPY
               </span>
             </div>
             
             {/* Line 2: PRACTICE MANAGEMENT */}
-            <h1 className="leading-none font-black tracking-tight text-mello-light uppercase mt-2 md:mt-4" style={{fontSize: '72px'}}>
+            <h1 className="leading-none font-black tracking-tight text-mello-light uppercase mt-2 md:mt-4 text-5xl md:text-6xl">
               PRACTICE MANAGEMENT
             </h1>
           </div>
+
+          {/* Subheading */}
+          <p className="text-white/80 text-xs md:text-lg max-w-3xl leading-relaxed">
+            We believe that therapists deserve the same care and support they give their clients.
+          </p>
         
         </div>
 
