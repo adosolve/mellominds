@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ResourcesDesktop from './ResourcesDesktop';
 import ResourcesMobile from './ResourcesMobile';
+import { SEO } from './SEO';
 
 const Resources: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -17,7 +18,16 @@ const Resources: React.FC = () => {
     return () => window.removeEventListener('resize', checkDevice);
   }, []);
 
-  return isMobile ? <ResourcesMobile /> : <ResourcesDesktop />;
+  return (
+    <>
+      <SEO 
+        title="Resources | MelloMinds - Guides & Support for Therapists"
+        description="Access free guides, video tutorials, documentation, and best practices for therapy practice management. Learn how to optimize your workflow with MelloMinds."
+        path="/resources"
+      />
+      {isMobile ? <ResourcesMobile /> : <ResourcesDesktop />}
+    </>
+  );
 };
 
 export default Resources;
