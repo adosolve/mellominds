@@ -1,12 +1,10 @@
 import React from 'react';
 import { Logo } from './Logo';
 import { Mascot } from './Mascot';
-import { CustomCursor } from './CustomCursor';
 
 const LandingPage: React.FC = () => {
   return (
-    <div className="relative h-screen px-6 py-8 md:px-12 md:py-12 max-w-[1400px] mx-auto overflow-hidden" style={{cursor: 'none'}}>
-      <CustomCursor />
+    <div className="relative h-screen px-6 py-8 md:px-12 md:py-12 max-w-[1400px] mx-auto overflow-hidden">
       
       {/* Header / Logo */}
       <header className="w-full mb-24 md:mb-32 flex items-center justify-between">

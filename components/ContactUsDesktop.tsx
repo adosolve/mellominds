@@ -6,38 +6,36 @@ const ContactUsDesktop: React.FC = () => {
     <div className="min-h-screen bg-[#082421] text-white px-6 py-8 md:px-12 md:py-12">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <header className="mb-16">
-          <div className="flex items-center justify-between mb-12">
-            <a href="/" className="inline-block">
-              <Logo />
-            </a>
-            <div className="flex items-center gap-4">
-              <nav className="flex items-center gap-1 bg-white rounded-full px-2 py-2">
-                <a href="/features" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
-                  Features
-                </a>
-                <a href="/resources" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
-                  Resources
-                </a>
-                <a href="/contact" className="px-4 py-2 text-gray-700 bg-gray-100 rounded-full transition-colors font-medium text-sm">
-                  Contact Us
-                </a>
-              </nav>
-              <a 
-                href="https://app.mellominds.co.in"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
-              >
-                Get early access →
+        <header className="w-full mb-16 flex items-center justify-between">
+          <a href="/" className="inline-block">
+            <Logo />
+          </a>
+          <div className="flex items-center gap-4">
+            <nav className="flex items-center gap-1 bg-white rounded-full px-2 py-2">
+              <a href="/features" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
+                Features
               </a>
-            </div>
-          </div>
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-black text-mello-light mb-4">Contact Us</h1>
-            <p className="text-xl text-white/70">We'd love to hear from you</p>
+              <a href="/resources" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
+                Resources
+              </a>
+              <a href="/contact" className="px-4 py-2 text-gray-700 bg-gray-100 rounded-full transition-colors font-medium text-sm">
+                Contact Us
+              </a>
+            </nav>
+            <a 
+              href="https://app.mellominds.co.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
+            >
+              Get early access →
+            </a>
           </div>
         </header>
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-6xl font-black text-mello-light mb-4">Contact Us</h1>
+          <p className="text-xl text-white/70">We'd love to hear from you</p>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           

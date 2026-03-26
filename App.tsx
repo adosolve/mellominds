@@ -9,12 +9,14 @@ import TermsOfService from './components/TermsOfService';
 import Features from './components/Features';
 import Resources from './components/Resources';
 import ContactUs from './components/ContactUs';
+import { CustomCursor } from './components/CustomCursor';
 
 const App: React.FC = () => {
   return (
     <HelmetProvider>
       <Router>
-        <div className="min-h-screen w-full overflow-hidden font-sans selection:bg-mello-yellow selection:text-mello-bg" style={{backgroundColor: '#082421'}}>
+        <div className="min-h-screen w-full overflow-hidden font-sans selection:bg-mello-yellow selection:text-mello-bg" style={{backgroundColor: '#082421', cursor: 'none'}}>
+          <CustomCursor />
           <Routes>
             <Route path="/" element={<ResponsiveLandingPage />} />
             <Route path="/features" element={<Features />} />
