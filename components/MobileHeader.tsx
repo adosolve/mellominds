@@ -76,7 +76,9 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({ currentPage = 'home'
               Contact Us
             </a>
             <a
-              href="/contact"
+              href="https://app.mellominds.co.in"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-4 text-mello-bg bg-mello-yellow hover:bg-mello-yellow/90 transition-colors font-bold text-center"
             >
               Get early access →

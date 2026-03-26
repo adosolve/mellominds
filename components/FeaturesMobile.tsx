@@ -116,7 +116,9 @@ const FeaturesMobile: React.FC = () => {
           <h2 className="text-2xl font-bold text-mello-light mb-3">Ready to transform your practice?</h2>
           <p className="text-white/80 mb-6">Join therapists using MelloMinds to streamline their workflow.</p>
           <a 
-            href="/contact" 
+            href="https://app.mellominds.co.in"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-mello-yellow text-mello-bg px-6 py-3 rounded-full font-bold hover:bg-mello-yellow/90 transition-colors shadow-lg"
           >
             Get early access →
