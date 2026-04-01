@@ -14,6 +14,9 @@ const FeaturesDesktop: React.FC = () => {
             <a href="/features" className="px-4 py-2 text-gray-700 bg-gray-100 rounded-full transition-colors font-medium text-sm">
               Features
             </a>
+            <a href="/pricing" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
+              Pricing
+            </a>
             <a href="/resources" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
               Resources
             </a>

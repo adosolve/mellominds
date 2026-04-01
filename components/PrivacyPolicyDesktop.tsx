@@ -9,14 +9,18 @@ const PrivacyPolicyDesktop: React.FC = () => {
         <a href="/" className="inline-block hover:opacity-80 transition-opacity">
           <Logo />
         </a>
-        <a 
-          href="https://app.mellominds.co.in"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
-        >
-          Get early access →
-        </a>
+        <div className="flex items-center gap-4">
+          <nav className="hidden md:flex items-center gap-1 bg-white rounded-full px-2 py-2">
+            <a href="/features" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">Features</a>
+            <a href="/pricing" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">Pricing</a>
+            <a href="/resources" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">Resources</a>
+            <a href="/contact" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">Contact Us</a>
+          </nav>
+          <a href="https://app.mellominds.co.in" target="_blank" rel="noopener noreferrer"
+            className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg">
+            Get early access →
+          </a>
+        </div>
       </header>
 
       <div className="max-w-4xl mx-auto px-6 md:px-12 pt-28">
