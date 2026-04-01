@@ -15,71 +15,6 @@ const ContactUsMobile: React.FC = () => {
           </div>
         </header>
 
-        {/* Contact Form */}
-        <div className="bg-white/5 rounded-2xl p-6 border border-white/10 mb-8">
-          <h2 className="text-xl font-bold text-mello-yellow mb-6">Send us a message</h2>
-          <form className="space-y-5">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-2">
-                Full Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-mello-yellow transition-colors"
-                placeholder="Your name"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-2">
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-mello-yellow transition-colors"
-                placeholder="your@email.com"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-white/80 mb-2">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-mello-yellow transition-colors"
-                placeholder="How can we help?"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-white/80 mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={5}
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-mello-yellow transition-colors resize-none"
-                placeholder="Tell us more..."
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-mello-yellow text-mello-bg px-6 py-3 rounded-full font-bold hover:bg-mello-yellow/90 transition-colors shadow-lg"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
-
         {/* Contact Information */}
         <div className="space-y-6 mb-12">
           <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
@@ -148,7 +83,7 @@ const ContactUsMobile: React.FC = () => {
         {/* Footer */}
         <footer className="pt-8 border-t border-white/10">
           <div className="flex flex-col items-center gap-4 text-xs text-white/50 text-center">
-            <span>© 2026 MelloMinds. All rights reserved.</span>
+            <span>© 2026 MelloMinds LLP. All rights reserved.</span>
             <div className="flex items-center gap-3">
               <a href="/" className="hover:text-white/70 transition-colors">Home</a>
               <span>•</span>

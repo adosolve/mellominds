@@ -22,7 +22,7 @@ const ResponsiveLandingPage: React.FC = () => {
     <>
       <SEO 
         title="MelloMinds | Therapy Practice Management Software for Indian Professionals"
-        description="Streamline your mental health practice with MelloMinds. An all-in-one platform for appointments, billing, and therapy notes designed for Indian therapists. Launching soon!"
+        description="Streamline your mental health practice with MelloMinds. An all-in-one platform for appointments, billing, and therapy notes designed for Indian therapists."
         path="/"
       />
       {isMobile ? <MobileLandingPage /> : <LandingPage />}

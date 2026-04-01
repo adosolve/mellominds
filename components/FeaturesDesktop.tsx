@@ -3,35 +3,36 @@ import { Logo } from './Logo';
 
 const FeaturesDesktop: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#082421] text-white px-6 py-8 md:px-12 md:py-12">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <header className="w-full mb-16 flex items-center justify-between">
-          <a href="/" className="inline-block">
-            <Logo />
-          </a>
-          <div className="flex items-center gap-4">
-            <nav className="flex items-center gap-1 bg-white rounded-full px-2 py-2">
-              <a href="/features" className="px-4 py-2 text-gray-700 bg-gray-100 rounded-full transition-colors font-medium text-sm">
-                Features
-              </a>
-              <a href="/resources" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
-                Resources
-              </a>
-              <a href="/contact" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
-                Contact Us
-              </a>
-            </nav>
-            <a 
-              href="https://app.mellominds.co.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
-            >
-              Get early access →
+    <div className="min-h-screen bg-[#082421] text-white">
+      {/* Fixed Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 bg-[#082421]/80 backdrop-blur-md border-b border-white/5">
+        <a href="/" className="inline-block">
+          <Logo />
+        </a>
+        <div className="flex items-center gap-4">
+          <nav className="flex items-center gap-1 bg-white rounded-full px-2 py-2">
+            <a href="/features" className="px-4 py-2 text-gray-700 bg-gray-100 rounded-full transition-colors font-medium text-sm">
+              Features
             </a>
-          </div>
-        </header>
+            <a href="/resources" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
+              Resources
+            </a>
+            <a href="/contact" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
+              Contact Us
+            </a>
+          </nav>
+          <a 
+            href="https://app.mellominds.co.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
+          >
+            Get early access →
+          </a>
+        </div>
+      </header>
+
+      <div className="max-w-6xl mx-auto px-6 md:px-12 pt-28">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-black text-mello-light mb-4">Features</h1>
           <p className="text-xl text-white/70">Everything you need to manage your therapy practice</p>
@@ -150,7 +151,7 @@ const FeaturesDesktop: React.FC = () => {
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t border-white/10">
           <div className="flex flex-wrap items-center justify-between gap-4 text-xs text-white/50">
-            <span>© 2026 MelloMinds. All rights reserved.</span>
+            <span>© 2026 MelloMinds LLP. All rights reserved.</span>
             <div className="flex items-center gap-4">
               <a href="/" className="hover:text-white/70 transition-colors">Home</a>
               <span>•</span>

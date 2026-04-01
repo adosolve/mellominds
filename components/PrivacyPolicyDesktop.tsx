@@ -3,26 +3,27 @@ import { Logo } from './Logo';
 
 const PrivacyPolicyDesktop: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#082421] text-white px-6 py-8 md:px-12 md:py-12">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <header className="mb-12">
-          <div className="flex items-start justify-between mb-8">
-            <a href="/" className="inline-block hover:opacity-80 transition-opacity">
-              <Logo />
-            </a>
-            <a 
-              href="https://app.mellominds.co.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
-            >
-              Get early access →
-            </a>
-          </div>
+    <div className="min-h-screen bg-[#082421] text-white">
+      {/* Fixed Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 bg-[#082421]/80 backdrop-blur-md border-b border-white/5">
+        <a href="/" className="inline-block hover:opacity-80 transition-opacity">
+          <Logo />
+        </a>
+        <a 
+          href="https://app.mellominds.co.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
+        >
+          Get early access →
+        </a>
+      </header>
+
+      <div className="max-w-4xl mx-auto px-6 md:px-12 pt-28">
+        <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-black text-mello-light mb-4">Privacy Policy</h1>
           <p className="text-white/70">Last updated: February 28, 2026</p>
-        </header>
+        </div>
 
         {/* Content */}
         <div className="space-y-8 text-white/90 leading-relaxed">
@@ -111,7 +112,7 @@ const PrivacyPolicyDesktop: React.FC = () => {
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t border-white/10">
           <div className="flex flex-wrap items-center justify-between gap-4 text-xs text-white/50">
-            <span>© 2026 MelloMinds. All rights reserved.</span>
+            <span>© 2026 MelloMinds LLP. All rights reserved.</span>
             <div className="flex items-center gap-4">
               <a href="/" className="hover:text-white/70 transition-colors">Home</a>
               <span>•</span>
