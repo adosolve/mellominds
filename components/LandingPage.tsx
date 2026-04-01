@@ -47,7 +47,7 @@ const LandingPage: React.FC = () => {
           rel="noopener noreferrer"
           className="inline-block bg-mello-yellow text-mello-bg font-semibold text-sm px-5 py-2 rounded-full mb-6 hover:bg-mello-yellow/90 transition-colors shadow-md"
         >
-          SignUp for Free: Get free access to MelloMinds Dashboard →
+          SIGNUP FOR FREE: Get free access to MelloMinds Dashboard →
         </a>
 
         {/* Greeting */}
