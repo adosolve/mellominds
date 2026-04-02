@@ -17,95 +17,82 @@ const FeaturesMobile: React.FC = () => {
 
         {/* Features List */}
         <div className="space-y-6 mb-12">
-          
+
           <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
             <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/2-2.png" alt="Security & Compliance" className="w-full h-auto" />
+              <img src="/Images/Booking & Calendar Management.webp" alt="Booking & Calendar Management" className="w-full h-auto" />
             </div>
             <div className="bg-mello-yellow/10 rounded-xl p-3 mb-3">
-              <h3 className="text-xl font-bold text-mello-yellow">Security & Compliance</h3>
-              <h4 className="text-sm font-semibold text-white/90">Zero-Knowledge Encryption & ABDM Compliance</h4>
+              <h3 className="text-xl font-bold text-mello-yellow">Booking & Calendar Management</h3>
+              <h4 className="text-sm font-semibold text-white/90">Event Types, Availability & Public Booking Pages</h4>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              Rest assured that your practice meets the highest digital safety standards. We utilize Zero-Knowledge encryption, which means your client data is encrypted before it touches our servers our tech team ensure its mathematically impossible for us or anyone else to view it. Full ABDM compliance further establishes your credibility within the digital health ecosystem.
+              Create event types, set your availability, and share booking links with clients. Clients book slots through a public booking page with a smooth slot-picking and confirmation flow — no back-and-forth needed.
             </p>
           </div>
 
           <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
             <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/3-3071.png" alt="Clinical Workflow" className="w-full h-auto" />
+              <img src="/Images/Client Management.webp" alt="Client Management" className="w-full h-auto" />
             </div>
             <div className="bg-mello-yellow/10 rounded-xl p-3 mb-3">
-              <h3 className="text-xl font-bold text-mello-yellow">Clinical Workflow</h3>
-              <h4 className="text-sm font-semibold text-white/90">Comprehensive Client Management & Clinical Notes</h4>
+              <h3 className="text-xl font-bold text-mello-yellow">Client Management</h3>
+              <h4 className="text-sm font-semibold text-white/90">Full CRM-Style Client Profiles & Session History</h4>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              Access a dedicated workspace for every client, featuring case histories, session logs, and an activity suggestion engine that automatically notifies clients of new tasks. Speed up your documentation by using our standardized industry-compliant note templates, or create your own custom templates to match your therapy style.
+              A full CRM-style client list with individual profiles, session history, notes, and the ability to transfer clients between practitioners — everything you need to manage your caseload in one place.
             </p>
           </div>
 
           <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
             <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/5-137477988.png" alt="Finance & Billing" className="w-full h-auto" />
+              <img src="/Images/Notes and Templates.webp" alt="Notes & Templates" className="w-full h-auto" />
             </div>
             <div className="bg-mello-yellow/10 rounded-xl p-3 mb-3">
-              <h3 className="text-xl font-bold text-mello-yellow">Finance & Billing</h3>
-              <h4 className="text-sm font-semibold text-white/90">Integrated Payments & Automated Invoicing</h4>
+              <h3 className="text-xl font-bold text-mello-yellow">Notes & Templates</h3>
+              <h4 className="text-sm font-semibold text-white/90">Session Notes with Reusable Templates</h4>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              Generate professional invoices instantly and integrate your preferred payment gateway directly into the platform, allowing for seamless, secure transaction tracking that keeps your practice's cash flow healthy.
+              Write session notes tied directly to client profiles, with reusable note templates to speed up documentation. Spend less time on paperwork and more time with your clients.
             </p>
           </div>
 
           <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
             <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/4-7589.png" alt="Scheduling" className="w-full h-auto" />
+              <img src="/Images/Payments & Invoicing.webp" alt="Payments & Invoicing" className="w-full h-auto" />
             </div>
             <div className="bg-mello-yellow/10 rounded-xl p-3 mb-3">
-              <h3 className="text-xl font-bold text-mello-yellow">Scheduling</h3>
-              <h4 className="text-sm font-semibold text-white/90">Smart Multi-Service Calendar & Google Sync</h4>
+              <h3 className="text-xl font-bold text-mello-yellow">Payments & Invoicing</h3>
+              <h4 className="text-sm font-semibold text-white/90">Cashfree-Integrated Payment Collection & Invoicing</h4>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              Organize your time effectively by creating distinct calendar resources for specific services (e.g. Individual Therapy, Couples Counseling, ADHD Assessment). Full two-way synchronization with Google Calendar ensures your personal and professional schedules never conflict.
+              Integrated with Cashfree for seamless payment collection. Require upfront payment at booking and track all transactions through a dedicated invoicing view — keeping your practice's cash flow healthy.
             </p>
           </div>
 
           <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
             <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/6-333899.png" alt="Client Acquisition" className="w-full h-auto" />
+              <img src="/Images/Google Calendar & Meet Integration.webp" alt="Google Calendar & Meet Integration" className="w-full h-auto" />
             </div>
             <div className="bg-mello-yellow/10 rounded-xl p-3 mb-3">
-              <h3 className="text-xl font-bold text-mello-yellow">Client Acquisition</h3>
-              <h4 className="text-sm font-semibold text-white/90">Sharable Booking Profile</h4>
+              <h3 className="text-xl font-bold text-mello-yellow">Google Calendar & Meet Integration</h3>
+              <h4 className="text-sm font-semibold text-white/90">OAuth Sync & Auto-Generated Meet Links</h4>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              Eliminate the back-and-forth of scheduling. You get a professional, sharable profile link that showcases your expertise and real-time availability, allowing existing and potential clients to book sessions with you instantly and securely.
+              OAuth-based Google Calendar sync ensures every booking reflects on your personal calendar. Google Meet links are auto-generated for virtual sessions, so clients always have what they need to join.
             </p>
           </div>
 
           <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
             <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/9.png" alt="Automation" className="w-full h-auto" />
+              <img src="/Images/Multi-tier Plans & Enterprise.webp" alt="Multi-tier Plans & Enterprise" className="w-full h-auto" />
             </div>
             <div className="bg-mello-yellow/10 rounded-xl p-3 mb-3">
-              <h3 className="text-xl font-bold text-mello-yellow">Automation</h3>
-              <h4 className="text-sm font-semibold text-white/90">Appointment Command Center & Reminders</h4>
+              <h3 className="text-xl font-bold text-mello-yellow">Multi-tier Plans & Enterprise</h3>
+              <h4 className="text-sm font-semibold text-white/90">Free, Paid & Enterprise Tiers for Every Practice</h4>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              Reduce no-shows and keep your day running smoothly. Manage all upcoming sessions from a single view where the system automatically handles the busy work of sending timely appointment reminders to your clients on your behalf.
-            </p>
-          </div>
-
-          <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-            <div className="w-full rounded-[20px] mb-4 overflow-hidden">
-              <img src="/Images/1-1.png" alt="Ease of Use" className="w-full h-auto" />
-            </div>
-            <div className="bg-mello-yellow/10 rounded-xl p-3 mb-3">
-              <h3 className="text-xl font-bold text-mello-yellow">Ease of Use</h3>
-              <h4 className="text-sm font-semibold text-white/90">Zero-Tech Control Center</h4>
-            </div>
-            <p className="text-white/80 text-sm leading-relaxed">
-              You are a therapist, not an IT manager. MelloMinds is designed with a "No-Code" philosophy, giving you a centralized dashboard that is intuitive and easy to navigate, allowing you to operate your entire digital practice without any technical knowledge.
+              A flexible plan and upgrade system with an enterprise lead capture flow — designed for solo practitioners, growing practices, and large wellness organizations alike. Start free and scale as you grow.
             </p>
           </div>
 
