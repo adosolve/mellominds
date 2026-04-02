@@ -142,7 +142,7 @@ const TermsOfServiceMobile: React.FC = () => {
             <div className="flex items-center gap-4">
               <a href="/" className="hover:text-white/70 transition-colors">Home</a>
               <span>•</span>
-              <a href="/privacy-policy" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
+              <a href="https://app.mellominds.co.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
             </div>
           </div>
         </footer>

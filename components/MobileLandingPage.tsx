@@ -59,9 +59,9 @@ const MobileLandingPage: React.FC = () => {
             <div className="flex flex-col items-center gap-2">
               <span>© 2026 MelloMinds LLP. All rights reserved.</span>
               <div className="flex items-center gap-2">
-                <a href="/privacy-policy" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
+                <a href="https://app.mellominds.co.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
                 <span>•</span>
-                <a href="/terms-of-service" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
+                <a href="https://app.mellominds.co.in/terms-of-service" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
               </div>
             </div>
           </div>

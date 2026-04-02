@@ -44,42 +44,6 @@ const ResourcesDesktop: React.FC = () => {
         {/* Resources Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           
-          {/* Getting Started */}
-          <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-all hover:transform hover:scale-105">
-            <div className="text-4xl mb-4">🚀</div>
-            <h3 className="text-2xl font-bold text-mello-yellow mb-3">Getting Started</h3>
-            <p className="text-white/80 leading-relaxed mb-4">
-              New to MelloMinds? Start here with our comprehensive onboarding guide.
-            </p>
-            <a href="#" className="text-mello-light hover:text-mello-yellow transition-colors font-semibold">
-              Read guide →
-            </a>
-          </div>
-
-          {/* Best Practices */}
-          <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-all hover:transform hover:scale-105">
-            <div className="text-4xl mb-4">✨</div>
-            <h3 className="text-2xl font-bold text-mello-yellow mb-3">Best Practices</h3>
-            <p className="text-white/80 leading-relaxed mb-4">
-              Learn proven strategies to optimize your therapy practice workflow.
-            </p>
-            <a href="#" className="text-mello-light hover:text-mello-yellow transition-colors font-semibold">
-              Explore tips →
-            </a>
-          </div>
-
-          {/* Video Tutorials */}
-          <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-all hover:transform hover:scale-105">
-            <div className="text-4xl mb-4">🎥</div>
-            <h3 className="text-2xl font-bold text-mello-yellow mb-3">Video Tutorials</h3>
-            <p className="text-white/80 leading-relaxed mb-4">
-              Watch step-by-step video guides to master every feature.
-            </p>
-            <a href="#" className="text-mello-light hover:text-mello-yellow transition-colors font-semibold">
-              Watch now →
-            </a>
-          </div>
-
           {/* Documentation */}
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-all hover:transform hover:scale-105">
             <div className="text-4xl mb-4">📚</div>
@@ -144,9 +108,9 @@ const ResourcesDesktop: React.FC = () => {
             <div className="flex items-center gap-4">
               <a href="/" className="hover:text-white/70 transition-colors">Home</a>
               <span>•</span>
-              <a href="/privacy-policy" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
+              <a href="https://app.mellominds.co.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
               <span>•</span>
-              <a href="/terms-of-service" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
+              <a href="https://app.mellominds.co.in/terms-of-service" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
             </div>
           </div>
         </footer>

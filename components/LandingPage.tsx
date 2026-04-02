@@ -87,9 +87,9 @@ const LandingPage: React.FC = () => {
         <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
           <span>© 2026 MelloMinds LLP. All rights reserved.</span>
           <div className="flex items-center gap-x-4">
-            <a href="/privacy-policy" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
+            <a href="https://app.mellominds.co.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
             <span>•</span>
-            <a href="/terms-of-service" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
+            <a href="https://app.mellominds.co.in/terms-of-service" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
           </div>
         </div>
       </footer>

@@ -19,39 +19,6 @@ const ResourcesMobile: React.FC = () => {
         <div className="space-y-6 mb-12">
           
           <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-            <div className="text-3xl mb-3">🚀</div>
-            <h3 className="text-xl font-bold text-mello-yellow mb-2">Getting Started</h3>
-            <p className="text-white/80 text-sm leading-relaxed mb-3">
-              New to MelloMinds? Start here with our comprehensive onboarding guide.
-            </p>
-            <a href="#" className="text-mello-light hover:text-mello-yellow transition-colors font-semibold text-sm">
-              Read guide →
-            </a>
-          </div>
-
-          <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-            <div className="text-3xl mb-3">✨</div>
-            <h3 className="text-xl font-bold text-mello-yellow mb-2">Best Practices</h3>
-            <p className="text-white/80 text-sm leading-relaxed mb-3">
-              Learn proven strategies to optimize your therapy practice workflow.
-            </p>
-            <a href="#" className="text-mello-light hover:text-mello-yellow transition-colors font-semibold text-sm">
-              Explore tips →
-            </a>
-          </div>
-
-          <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-            <div className="text-3xl mb-3">🎥</div>
-            <h3 className="text-xl font-bold text-mello-yellow mb-2">Video Tutorials</h3>
-            <p className="text-white/80 text-sm leading-relaxed mb-3">
-              Watch step-by-step video guides to master every feature.
-            </p>
-            <a href="#" className="text-mello-light hover:text-mello-yellow transition-colors font-semibold text-sm">
-              Watch now →
-            </a>
-          </div>
-
-          <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
             <div className="text-3xl mb-3">📚</div>
             <h3 className="text-xl font-bold text-mello-yellow mb-2">Documentation</h3>
             <p className="text-white/80 text-sm leading-relaxed mb-3">
@@ -108,9 +75,9 @@ const ResourcesMobile: React.FC = () => {
             <div className="flex items-center gap-3">
               <a href="/" className="hover:text-white/70 transition-colors">Home</a>
               <span>•</span>
-              <a href="/privacy-policy" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
+              <a href="https://app.mellominds.co.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
               <span>•</span>
-              <a href="/terms-of-service" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
+              <a href="https://app.mellominds.co.in/terms-of-service" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
             </div>
           </div>
         </footer>
