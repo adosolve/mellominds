@@ -68,17 +68,6 @@ const ResourcesDesktop: React.FC = () => {
             </a>
           </div>
 
-          {/* Support Center */}
-          <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-mello-yellow/50 transition-all hover:transform hover:scale-105">
-            <div className="text-4xl mb-4">💬</div>
-            <h3 className="text-2xl font-bold text-mello-yellow mb-3">Support Center</h3>
-            <p className="text-white/80 leading-relaxed mb-4">
-              Get help from our support team and community forums.
-            </p>
-            <a href="#" className="text-mello-light hover:text-mello-yellow transition-colors font-semibold">
-              Get support →
-            </a>
-          </div>
 
         </div>
 

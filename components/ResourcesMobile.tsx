@@ -40,16 +40,6 @@ const ResourcesMobile: React.FC = () => {
             </a>
           </div>
 
-          <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-            <div className="text-3xl mb-3">💬</div>
-            <h3 className="text-xl font-bold text-mello-yellow mb-2">Support Center</h3>
-            <p className="text-white/80 text-sm leading-relaxed mb-3">
-              Get help from our support team and community forums.
-            </p>
-            <a href="#" className="text-mello-light hover:text-mello-yellow transition-colors font-semibold text-sm">
-              Get support →
-            </a>
-          </div>
 
         </div>
 

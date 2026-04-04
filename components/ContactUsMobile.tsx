@@ -37,16 +37,6 @@ const ContactUsMobile: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-            <div className="text-3xl mb-3">💬</div>
-            <h3 className="text-xl font-bold text-mello-yellow mb-2">Support</h3>
-            <p className="text-white/80 text-sm mb-3">
-              Need help? Check out our support center
-            </p>
-            <a href="/resources" className="text-mello-light hover:text-mello-yellow transition-colors font-semibold text-sm">
-              Visit Support Center →
-            </a>
-          </div>
         </div>
 
         {/* FAQ Section */}

@@ -62,14 +62,6 @@ const ContactUsDesktop: React.FC = () => {
               </p>
             </div>
 
-            <div className="flex-1 bg-white/5 rounded-2xl p-8 border border-white/10">
-              <div className="text-4xl mb-4">💬</div>
-              <h3 className="text-2xl font-bold text-mello-yellow mb-3">Support</h3>
-              <p className="text-white/80 mb-4">Need help? Check out our support center</p>
-              <a href="/resources" className="text-mello-light hover:text-mello-yellow transition-colors font-semibold">
-                Visit Support Center →
-              </a>
-            </div>
           </div>
 
         </div>
