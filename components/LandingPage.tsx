@@ -38,7 +38,7 @@ const LandingPage: React.FC = () => {
       </header>
 
       {/* Main Content */}
-      <main className="flex flex-col items-center justify-center text-center min-h-screen px-6 md:px-12 pt-24 pb-64">
+      <main className="flex flex-col items-center justify-center text-center min-h-screen px-6 md:px-12 pt-24 pb-80">
 
         {/* Tag */}
         <a
@@ -51,27 +51,27 @@ const LandingPage: React.FC = () => {
         </a>
 
         {/* Greeting */}
-        <h2 className="font-medium text-white flex items-center justify-center gap-3 md:gap-4 mb-2 text-4xl md:text-5xl">
-          Say <span className="text-2xl md:text-3xl animate-pulse">👋</span> hello to <span className="text-mello-yellow font-bold">mello!</span>
+        <h2 className="font-medium text-white flex items-center justify-center gap-3 md:gap-4 mb-2 text-4xl" style={{fontSize: '45px'}}>
+          Say <span className="animate-pulse" style={{fontSize: '30px'}}>👋</span> hello to <span className="text-mello-yellow font-bold">mello!</span>
         </h2>
 
         {/* Main Headline */}
         <div className="flex flex-col items-center mb-4">
           <div className="flex flex-wrap justify-center items-baseline gap-x-4 md:gap-x-6">
-            <span className="leading-none font-black tracking-tight text-mello-dim uppercase text-5xl md:text-6xl">
+            <span className="leading-none font-black tracking-tight text-mello-dim uppercase" style={{fontSize: '55px'}}>
               FUTURE OF
             </span>
-            <span className="leading-none font-black tracking-tight text-mello-light uppercase text-5xl md:text-6xl">
+            <span className="leading-none font-black tracking-tight text-mello-light uppercase" style={{fontSize: '55px'}}>
               THERAPY
             </span>
           </div>
-          <h1 className="leading-none font-black tracking-tight text-mello-light uppercase mt-2 md:mt-4 text-5xl md:text-6xl">
+          <h1 className="leading-none font-black tracking-tight text-mello-light uppercase mt-2 md:mt-4" style={{fontSize: '55px'}}>
             PRACTICE MANAGEMENT
           </h1>
         </div>
 
         {/* Subheading */}
-        <p className="text-white/80 text-xs md:text-lg max-w-2xl leading-relaxed">
+        <p className="text-white/80 max-w-2xl leading-relaxed" style={{fontSize: '15px'}}>
           We believe that therapists deserve the same care and support they give their clients.
         </p>
 
