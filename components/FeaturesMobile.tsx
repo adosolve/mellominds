@@ -8,7 +8,7 @@ const FeaturesMobile: React.FC = () => {
         {/* Header */}
         <MobileHeader currentPage="features" />
         
-        <header className="mb-12 mt-20">
+        <header className="mb-12 mt-44">
           <div className="text-center">
             <h1 className="text-4xl font-black text-mello-light mb-3">Features</h1>
             <p className="text-lg text-white/70">Everything you need to manage your therapy practice</p>
@@ -108,7 +108,7 @@ const FeaturesMobile: React.FC = () => {
             rel="noopener noreferrer"
             className="inline-block bg-mello-yellow text-mello-bg px-6 py-3 rounded-full font-bold hover:bg-mello-yellow/90 transition-colors shadow-lg"
           >
-            Get early access →
+            Get Started Free
           </a>
         </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { MobileHeader } from './MobileHeader';
+import { FooterMobile } from './FooterMobile';
 
 const ContactUsMobile: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ const ContactUsMobile: React.FC = () => {
         {/* Header */}
         <MobileHeader currentPage="contact" />
         
-        <header className="mb-12 mt-20">
+        <header className="mb-12 mt-44">
           <div className="text-center">
             <h1 className="text-4xl font-black text-mello-light mb-3">Contact Us</h1>
             <p className="text-lg text-white/70">We'd love to hear from you</p>
@@ -39,50 +40,8 @@ const ContactUsMobile: React.FC = () => {
 
         </div>
 
-        {/* FAQ Section */}
-        <div className="bg-gradient-to-r from-mello-yellow/20 to-mello-light/20 rounded-2xl p-8 border border-mello-yellow/30 mb-12">
-          <h2 className="text-2xl font-bold text-mello-light mb-6 text-center">FAQ</h2>
-          <div className="space-y-5">
-            <div>
-              <h4 className="text-base font-semibold text-mello-yellow mb-2">How do I get started?</h4>
-              <p className="text-white/80 text-sm">
-                Click "Get early access" to sign up. We'll guide you through setup.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-base font-semibold text-mello-yellow mb-2">Is my data secure?</h4>
-              <p className="text-white/80 text-sm">
-                Yes! We use enterprise-grade encryption and are fully HIPAA compliant.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-base font-semibold text-mello-yellow mb-2">What's your pricing?</h4>
-              <p className="text-white/80 text-sm">
-                We offer flexible plans. Contact us for detailed pricing information.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-base font-semibold text-mello-yellow mb-2">Do you offer training?</h4>
-              <p className="text-white/80 text-sm">
-                Yes! We provide comprehensive onboarding and training resources.
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* Footer */}
-        <footer className="pt-8 border-t border-white/10">
-          <div className="flex flex-col items-center gap-4 text-xs text-white/50 text-center">
-            <span>© 2026 MelloMinds LLP. All rights reserved.</span>
-            <div className="flex items-center gap-3">
-              <a href="/" className="hover:text-white/70 transition-colors">Home</a>
-              <span>•</span>
-              <a href="https://app.mellominds.co.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
-              <span>•</span>
-              <a href="https://app.mellominds.co.in/terms-of-service" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
-            </div>
-          </div>
-        </footer>
+        <FooterMobile />
       </div>
     </div>
   );

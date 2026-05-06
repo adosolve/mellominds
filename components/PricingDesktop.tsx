@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Logo } from './Logo';
+import { Header } from './Header';
+import { Footer } from './Footer';
 
 const freeFeatures: { category: string; items: string[] }[] = [
   {
@@ -150,29 +151,13 @@ const PricingDesktop: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#082421] text-white">
       {/* Fixed Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 bg-[#082421]/80 backdrop-blur-md border-b border-white/5">
-        <a href="/" className="inline-block">
-          <Logo />
-        </a>
-        <div className="flex items-center gap-4">
-          <nav className="flex items-center gap-1 bg-white rounded-full px-2 py-2">
-            <a href="/features" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">Features</a>
-            <a href="/pricing" className="px-4 py-2 text-gray-700 bg-gray-100 rounded-full transition-colors font-medium text-sm">Pricing</a>
-            <a href="/resources" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">Resources</a>
-            <a href="/contact" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">Contact Us</a>
-          </nav>
-          <a href="https://app.mellominds.co.in" target="_blank" rel="noopener noreferrer"
-            className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg">
-            Get early access →
-          </a>
-        </div>
-      </header>
+      <Header currentPage="pricing" />
 
-      <div className="max-w-6xl mx-auto px-6 md:px-12 pt-28 pb-16">
+      <div className="max-w-6xl mx-auto px-6 md:px-12 pt-44 pb-16">
 
         {/* Hero */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-black text-mello-light mb-4">Pricing</h1>
+          <h1 className="text-4xl font-black text-mello-light mb-4">Pricing</h1>
           <p className="text-xl text-white/70">Simple, transparent pricing. Start free, scale when you're ready.</p>
         </div>
 
@@ -193,7 +178,7 @@ const PricingDesktop: React.FC = () => {
 
             <a href="https://app.mellominds.co.in" target="_blank" rel="noopener noreferrer"
               className="w-full text-center bg-mello-yellow text-mello-bg px-6 py-3 rounded-full font-bold hover:bg-mello-yellow/90 transition-colors shadow-lg mb-8">
-              Get started for free →
+              Get Started Free
             </a>
 
             {/* Feature accordion */}
@@ -281,29 +266,8 @@ const PricingDesktop: React.FC = () => {
 
         </div>
 
-        {/* CTA Banner */}
-        <div className="bg-gradient-to-r from-mello-yellow/20 to-mello-light/10 rounded-3xl p-12 border border-mello-yellow/30 text-center mb-16">
-          <h2 className="text-3xl font-black text-mello-light mb-3">Ready to get started?</h2>
-          <p className="text-white/60 mb-6">Join therapists already using MelloMinds to streamline their practice.</p>
-          <a href="https://app.mellominds.co.in" target="_blank" rel="noopener noreferrer"
-            className="inline-block bg-mello-yellow text-mello-bg px-8 py-4 rounded-full font-bold text-lg hover:bg-mello-yellow/90 transition-colors shadow-lg">
-            Start for free →
-          </a>
-        </div>
-
         {/* Footer */}
-        <footer className="pt-8 border-t border-white/10">
-          <div className="flex flex-wrap items-center justify-between gap-4 text-xs text-white/50">
-            <span>© 2026 MelloMinds LLP. All rights reserved.</span>
-            <div className="flex items-center gap-4">
-              <a href="/" className="hover:text-white/70 transition-colors">Home</a>
-              <span>•</span>
-              <a href="https://app.mellominds.co.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
-              <span>•</span>
-              <a href="https://app.mellominds.co.in/terms-of-service" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

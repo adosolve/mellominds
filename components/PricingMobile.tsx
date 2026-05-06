@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MobileHeader } from './MobileHeader';
+import { FooterMobile } from './FooterMobile';
 
 const freeFeatures: { category: string; items: string[] }[] = [
   { category: 'Booking & Calendars', items: ['Create booking calendars (one-on-one, group, couples)', 'Public booking page with shareable link', 'Customizable booking slug per calendar', 'Set session duration, description, and type', 'Custom intake form questions', 'Multi-location support (Google Meet / in-person)', 'Automatic Google Meet link generation'] },
@@ -31,7 +32,7 @@ const PricingMobile: React.FC = () => {
       <div className="max-w-4xl mx-auto">
         <MobileHeader currentPage="pricing" />
 
-        <header className="mb-10 mt-20 text-center">
+        <header className="mb-10 mt-44 text-center">
           <h1 className="text-4xl font-black text-mello-light mb-3">Pricing</h1>
           <p className="text-lg text-white/70">Simple, transparent pricing.</p>
         </header>
@@ -48,7 +49,7 @@ const PricingMobile: React.FC = () => {
 
           <a href="https://app.mellominds.co.in" target="_blank" rel="noopener noreferrer"
             className="block w-full text-center bg-mello-yellow text-mello-bg px-6 py-3 rounded-full font-bold hover:bg-mello-yellow/90 transition-colors shadow-lg mb-6">
-            Get started for free →
+            Get Started Free
           </a>
 
           <div className="space-y-2">
@@ -126,18 +127,7 @@ const PricingMobile: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <footer className="pt-8 border-t border-white/10">
-          <div className="flex flex-col items-center gap-4 text-xs text-white/50 text-center">
-            <span>© 2026 MelloMinds LLP. All rights reserved.</span>
-            <div className="flex items-center gap-3">
-              <a href="/" className="hover:text-white/70 transition-colors">Home</a>
-              <span>•</span>
-              <a href="https://app.mellominds.co.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
-              <span>•</span>
-              <a href="https://app.mellominds.co.in/terms-of-service" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
-            </div>
-          </div>
-        </footer>
+        <FooterMobile />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo } from './Logo';
+import { Header } from './Header';
 import { Mascot } from './Mascot';
 
 const LandingPage: React.FC = () => {
@@ -7,48 +7,10 @@ const LandingPage: React.FC = () => {
     <div className="relative min-h-screen bg-[#082421] overflow-hidden">
 
       {/* Fixed Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 bg-[#082421]/80 backdrop-blur-md border-b border-white/5">
-        <a href="/" className="inline-block">
-          <Logo />
-        </a>
-        <div className="flex items-center gap-4">
-          <nav className="hidden md:flex items-center gap-1 bg-white rounded-full px-2 py-2">
-            <a href="/features" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
-              Features
-            </a>
-            <a href="/pricing" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
-              Pricing
-            </a>
-            <a href="/resources" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
-              Resources
-            </a>
-            <a href="/contact" className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors font-medium text-sm">
-              Contact Us
-            </a>
-          </nav>
-          <a
-            href="https://app.mellominds.co.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold hover:bg-mello-yellow/90 transition-colors shadow-lg"
-          >
-            Get early access →
-          </a>
-        </div>
-      </header>
+      <Header currentPage="home" />
 
       {/* Main Content */}
       <main className="flex flex-col items-center justify-center text-center min-h-screen px-6 md:px-12 pt-24 pb-80">
-
-        {/* Tag */}
-        <a
-          href="https://app.mellominds.co.in"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-mello-yellow text-mello-bg font-semibold text-sm px-5 py-2 rounded-full mb-6 hover:bg-mello-yellow/90 transition-colors shadow-md"
-        >
-          SIGNUP FOR FREE: Get free access to MelloMinds Dashboard →
-        </a>
 
         {/* Greeting */}
         <h2 className="font-medium text-white flex items-center justify-center gap-3 md:gap-4 mb-2 text-4xl" style={{fontSize: '45px'}}>

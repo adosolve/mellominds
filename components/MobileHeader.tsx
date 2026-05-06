@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Logo } from './Logo';
 
 interface MobileHeaderProps {
-  currentPage?: 'features' | 'resources' | 'contact' | 'pricing' | 'privacy' | 'terms' | 'home';
+  currentPage?: 'features' | 'faqs' | 'contact' | 'pricing' | 'privacy' | 'terms' | 'home';
 }
 
 export const MobileHeader: React.FC<MobileHeaderProps> = ({ currentPage = 'home' }) => {
@@ -68,12 +68,12 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({ currentPage = 'home'
               Pricing
             </a>
             <a
-              href="/resources"
+              href="/faqs"
               className={`px-6 py-4 hover:bg-white/10 transition-colors font-medium border-b border-white/10 ${
-                currentPage === 'resources' ? 'text-mello-yellow bg-white/10' : 'text-white'
+                currentPage === 'faqs' ? 'text-mello-yellow bg-white/10' : 'text-white'
               }`}
             >
-              Resources
+              FAQs
             </a>
             <a
               href="/contact"
@@ -89,7 +89,7 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({ currentPage = 'home'
               rel="noopener noreferrer"
               className="px-6 py-4 text-mello-bg bg-mello-yellow hover:bg-mello-yellow/90 transition-colors font-bold text-center"
             >
-              Get early access →
+              Get Started Free
             </a>
           </nav>
         </div>

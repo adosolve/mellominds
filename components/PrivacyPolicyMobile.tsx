@@ -8,8 +8,8 @@ const PrivacyPolicyMobile: React.FC = () => {
         {/* Header */}
         <MobileHeader currentPage="privacy" />
         
-        <header className="mb-12 mt-20">
-          <h1 className="text-4xl md:text-5xl font-black text-mello-light mb-4">Privacy Policy</h1>
+        <header className="mb-12 mt-44">
+          <h1 className="text-4xl font-black text-mello-light mb-4">Privacy Policy</h1>
           <p className="text-white/70">Last updated: February 28, 2026</p>
         </header>
 
