@@ -32,7 +32,7 @@ const PricingMobile: React.FC = () => {
       <div className="max-w-4xl mx-auto">
         <MobileHeader currentPage="pricing" />
 
-        <header className="mb-10 mt-44 text-center">
+        <header className="mb-10 mt-24 text-center">
           <h1 className="text-4xl font-black text-mello-light mb-3">Pricing</h1>
           <p className="text-lg text-white/70">Simple, transparent pricing.</p>
         </header>

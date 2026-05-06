@@ -198,7 +198,7 @@ const FAQsMobile: React.FC = () => {
       <MobileHeader currentPage="faqs" />
 
       {/* Main Content */}
-      <main className="pt-44 pb-8 px-4">
+      <main className="pt-24 pb-8 px-4">
         <div className="max-w-2xl mx-auto">
           {/* Page Header */}
           <div className="text-center mb-8">

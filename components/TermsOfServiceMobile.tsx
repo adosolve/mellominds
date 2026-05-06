@@ -8,7 +8,7 @@ const TermsOfServiceMobile: React.FC = () => {
         {/* Header */}
         <MobileHeader currentPage="terms" />
         
-        <header className="mb-12 mt-44">
+        <header className="mb-12 mt-24">
           <h1 className="text-4xl font-black text-mello-light mb-4">Terms of Service</h1>
           <p className="text-white/70">Effective Date: February 28, 2026</p>
         </header>

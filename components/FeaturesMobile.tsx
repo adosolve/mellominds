@@ -8,7 +8,7 @@ const FeaturesMobile: React.FC = () => {
         {/* Header */}
         <MobileHeader currentPage="features" />
         
-        <header className="mb-12 mt-44">
+        <header className="mb-12 mt-24">
           <div className="text-center">
             <h1 className="text-4xl font-black text-mello-light mb-3">Features</h1>
             <p className="text-lg text-white/70">Everything you need to manage your therapy practice</p>
