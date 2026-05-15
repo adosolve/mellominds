@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MobileHeader } from './MobileHeader';
-import { FooterMobile } from './FooterMobile';
+import { GlobalFooterMobile } from './GlobalFooter';
 
 interface FAQ {
   question: string;
@@ -261,7 +261,7 @@ const FAQsMobile: React.FC = () => {
       </main>
 
       {/* Footer */}
-      <FooterMobile />
+      <GlobalFooterMobile />
     </div>
   );
 };

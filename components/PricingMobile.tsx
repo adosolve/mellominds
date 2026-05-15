@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MobileHeader } from './MobileHeader';
-import { FooterMobile } from './FooterMobile';
+import { GlobalFooterMobile } from './GlobalFooter';
 
 const freeFeatures: { category: string; items: string[] }[] = [
   { category: 'Booking & Calendars', items: ['Create booking calendars (one-on-one, group, couples)', 'Public booking page with shareable link', 'Customizable booking slug per calendar', 'Set session duration, description, and type', 'Custom intake form questions', 'Multi-location support (Google Meet / in-person)', 'Automatic Google Meet link generation'] },
@@ -127,7 +127,7 @@ const PricingMobile: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <FooterMobile />
+        <GlobalFooterMobile />
       </div>
     </div>
   );

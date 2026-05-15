@@ -4,9 +4,9 @@ export const Logo: React.FC<{ className?: string }> = ({ className = "" }) => {
   return (
     <div className={className}>
       <img 
-        src="/Images/Frame 2 1.png" 
+        src="/Images/mellomindslogo.svg" 
         alt="MelloMinds" 
-        className="h-12 md:h-16 w-auto object-contain"
+        className="h-8 md:h-10 w-auto object-contain"
       />
     </div>
   );

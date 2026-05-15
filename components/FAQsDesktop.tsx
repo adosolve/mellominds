@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Header } from './Header';
-import { Footer } from './Footer';
+import { GlobalFooterDesktop } from './GlobalFooter';
 
 interface FAQ {
   question: string;
@@ -260,7 +260,7 @@ const FAQsDesktop: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <Footer />
+        <GlobalFooterDesktop />
       </main>
     </div>
   );

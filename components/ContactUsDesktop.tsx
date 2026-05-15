@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from './Header';
-import { Footer } from './Footer';
+import { GlobalFooterDesktop } from './GlobalFooter';
 
 const ContactUsDesktop: React.FC = () => {
   return (
@@ -40,7 +40,7 @@ const ContactUsDesktop: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <Footer />
+        <GlobalFooterDesktop />
       </div>
     </div>
   );

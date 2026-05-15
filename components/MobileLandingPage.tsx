@@ -2,83 +2,98 @@ import React from 'react';
 import { Logo } from './Logo';
 import { Mascot } from './Mascot';
 import { MobileHeader } from './MobileHeader';
+import { FeaturesSectionMobile } from './FeaturesSection';
+import { SecuritySectionMobile } from './SecuritySection';
+import { EnterpriseSectionMobile } from './EnterpriseSection';
+import { PricingSectionMobile } from './PricingSection';
+import { GlobalFooterMobile } from './GlobalFooter';
 
 const MobileLandingPage: React.FC = () => {
   return (
-    <div className="relative h-screen flex flex-col overflow-hidden" style={{backgroundColor: '#082421'}}>
+    <div className="bg-[#082421]">
       
-      {/* Header with Logo and Hamburger Menu */}
+      {/* Fixed Header */}
       <MobileHeader currentPage="home" />
 
-      {/* Main Content Area - Centered vertically */}
-      <main className="flex-1 flex flex-col justify-center items-center px-4 pb-8 -mt-8 sm:-mt-12">
-        
-        {/* Text Section */}
-        <div className="flex flex-col items-center">
-          
-          {/* Text Group - No gap between greeting and headline */}
-          <div className="flex flex-col items-center space-y-2">
-            {/* Greeting Line */}
-            <h2 className="font-medium text-white flex items-center justify-center gap-2 text-2xl sm:text-3xl">
-              Say <span className="animate-pulse text-2xl sm:text-3xl">👋</span> hello to <span className="text-mello-yellow font-bold">mello!</span>
-            </h2>
-
-            {/* Main Headline Group */}
-            <div className="flex flex-col items-center mb-3">
-              {/* Line 1: FUTURE OF THERAPY */}
-              <h1 className="leading-none font-black tracking-tight text-mello-dim uppercase text-center text-3xl sm:text-4xl">
-                FUTURE OF THERAPY
-              </h1>
-              
-              {/* Line 2: PRACTICE MANAGEMENT */}
-              <h1 className="leading-none font-black tracking-tight text-mello-light uppercase text-center text-3xl sm:text-4xl">
-                PRACTICE MANAGEMENT
-              </h1>
-            </div>
-
-            {/* Subheading */}
-            <p className="text-white/80 text-xs sm:text-sm text-center max-w-md px-4 leading-relaxed">
-              We believe that therapists deserve the same care and support they give their clients.
-            </p>
-          </div>
-          
-          {/* Get Started Free Button */}
-          <div className="mt-8">
-            <a 
-              href="https://app.mellominds.co.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-mello-yellow text-mello-bg px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-mello-yellow/90 transition-colors shadow-lg inline-block"
-            >
-              Get Started Free
-            </a>
-          </div>
-          
-          {/* Footer Text - Right below button */}
-          <div className="mt-16 text-xs text-white/50 font-medium text-center">
-            <div className="flex flex-col items-center gap-2">
-              <span>© 2026 MelloMinds LLP. All rights reserved.</span>
-              <div className="flex items-center gap-2">
-                <a href="https://app.mellominds.co.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Privacy Policy</a>
-                <span>•</span>
-                <a href="https://app.mellominds.co.in/terms-of-service" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors underline">Terms of Service</a>
-              </div>
-            </div>
-          </div>
-        
+      {/* S1: Hero Section */}
+      <section className="relative flex flex-col items-center justify-center text-center h-screen px-4">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/Images/therapy-practice-management.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
         </div>
 
-      </main>
+        {/* Greeting */}
+        <h2 className="relative z-10 font-medium text-white flex items-center justify-center gap-2 mb-2" style={{fontSize: '22px'}}>
+          Say <span className="animate-pulse" style={{fontSize: '18px'}}>👋</span> hello to <span className="text-mello-yellow font-bold">mello!</span>
+        </h2>
 
+        {/* H1: Core Message */}
+        <div className="relative z-10 flex flex-col items-center mb-3">
+          <h1 className="leading-none font-medium tracking-tight text-white uppercase text-center" style={{fontSize: '38px'}}>
+            FUTURE OF THERAPY
+          </h1>
+          <h1 className="leading-none font-medium tracking-tight text-white uppercase text-center mt-1" style={{fontSize: '38px'}}>
+            PRACTICE MANAGEMENT
+          </h1>
+        </div>
 
-      {/* Mascot Illustration - Fixed at bottom, only eyes visible */}
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[30px] sm:translate-y-[40px]">
-        <div className="relative">
-          <div className="scale-[0.65] sm:scale-75">
-            <Mascot />
+        {/* Subheading */}
+        <p className="relative z-10 text-white/80 text-center max-w-sm leading-relaxed mb-6" style={{fontSize: '14px'}}>
+          We believe that therapists deserve the same care and support they give their clients.
+        </p>
+
+        {/* CTA Button */}
+        <a
+          href="https://app.mellominds.co.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative z-20 bg-mello-yellow text-mello-bg px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-mello-yellow/90 transition-colors shadow-lg"
+        >
+          Get Started for Free
+        </a>
+
+        {/* Trust badges — bottom of S1 */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex items-center gap-4">
+          <div className="flex items-center gap-1.5">
+            <svg className="w-4 h-4 text-mello-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+            </svg>
+            <span className="text-white text-xs">256-bit AES Encryption</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <svg className="w-4 h-4 text-mello-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span className="text-white text-xs">99.9% Uptime SLA</span>
           </div>
         </div>
+      </section>
+
+      {/* S2: Features Section */}
+      <FeaturesSectionMobile />
+
+      {/* S3: Security & Compliance */}
+      <SecuritySectionMobile />
+
+      {/* S4: Enterprise Value Proposition */}
+      <EnterpriseSectionMobile />
+
+      {/* S5: Pricing */}
+      <PricingSectionMobile />
+
+      {/* Global Footer */}
+      <GlobalFooterMobile />
+
+      {/* Mascot — fixed bottom-right */}
+      <div className="fixed bottom-0 right-4 z-50 scale-[0.2] origin-bottom-right">
+        <Mascot />
       </div>
+
     </div>
   );
 };

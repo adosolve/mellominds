@@ -1,6 +1,6 @@
 import React from 'react';
 import { MobileHeader } from './MobileHeader';
-import { FooterMobile } from './FooterMobile';
+import { GlobalFooterMobile } from './GlobalFooter';
 
 const ContactUsMobile: React.FC = () => {
   return (
@@ -41,7 +41,7 @@ const ContactUsMobile: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <FooterMobile />
+        <GlobalFooterMobile />
       </div>
     </div>
   );

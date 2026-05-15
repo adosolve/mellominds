@@ -31,10 +31,10 @@ export const Mascot: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-full flex justify-center items-end mt-12 md:mt-24 pointer-events-none select-none mascot-container">
+    <div className="relative w-full flex justify-center items-end pointer-events-none select-none mascot-container">
       
       {/* The Head (Yellow Semi-Circle) */}
-      <div className="relative w-[300px] h-[150px] md:w-[600px] md:h-[300px] bg-mello-yellow rounded-t-full z-10 flex justify-center items-center overflow-hidden shadow-2xl shadow-black/20">
+      <div className="relative w-[300px] h-[150px] md:w-[600px] md:h-[300px] bg-mello-yellow rounded-t-full z-10 flex justify-center items-center overflow-hidden">
         
         {/* Face Container */}
         <div className="absolute bottom-[-20px] md:bottom-[-40px] flex gap-12 md:gap-24">

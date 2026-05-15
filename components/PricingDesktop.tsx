@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Header } from './Header';
-import { Footer } from './Footer';
+import { GlobalFooterDesktop } from './GlobalFooter';
 
 const freeFeatures: { category: string; items: string[] }[] = [
   {
@@ -267,7 +267,7 @@ const PricingDesktop: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <Footer />
+        <GlobalFooterDesktop />
       </div>
     </div>
   );
