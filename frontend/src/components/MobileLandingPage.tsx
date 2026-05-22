@@ -89,8 +89,8 @@ const MobileLandingPage: React.FC = () => {
       {/* Global Footer */}
       <GlobalFooterMobile />
 
-      {/* Mascot — fixed bottom-right */}
-      <div className="fixed bottom-0 right-4 z-50 scale-[0.2] origin-bottom-right">
+      {/* Mascot — fixed bottom-left */}
+      <div className="fixed bottom-0 left-4 z-50 scale-[0.2] origin-bottom-left">
         <Mascot />
       </div>
 

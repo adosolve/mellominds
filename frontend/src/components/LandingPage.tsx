@@ -78,8 +78,8 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Mascot — fixed bottom-right, stays pinned on scroll */}
-        <div className="fixed bottom-0 right-6 md:right-12 z-50 scale-[0.25] origin-bottom-right">
+        {/* Mascot — fixed bottom-left, stays pinned on scroll */}
+        <div className="fixed bottom-0 left-6 md:left-12 z-50 scale-[0.25] origin-bottom-left">
           <Mascot />
         </div>
 
