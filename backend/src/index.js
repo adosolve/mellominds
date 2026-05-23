@@ -5,11 +5,15 @@ import dotenv from 'dotenv';
 import { initializeDatabase } from './db/init.js';
 import chatRoutes from './routes/chat.js';
 import visitorRoutes from './routes/visitors.js';
+import contactusRoutes from './routes/contactus.js';
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5001;
+
+// Trust the first proxy hop (required for express-rate-limit to correctly read client IPs)
+app.set('trust proxy', 1);
 
 // Middleware
 app.use(helmet());
@@ -28,6 +32,7 @@ await initializeDatabase();
 // Routes
 app.use('/api/chat', chatRoutes);
 app.use('/api/visitors', visitorRoutes);
+app.use('/api/contactus', contactusRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {

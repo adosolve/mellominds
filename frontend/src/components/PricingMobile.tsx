@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MobileHeader } from './MobileHeader';
+import { ContactSection } from './ContactSection';
 import { GlobalFooterMobile } from './GlobalFooter';
 
 const freeFeatures: { category: string; items: string[] }[] = [
@@ -124,6 +125,11 @@ const PricingMobile: React.FC = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Contact Section */}
+        <div id="contact" className="mb-12">
+          <ContactSection />
         </div>
 
         {/* Footer */}

@@ -21,8 +21,10 @@ async function createTables() {
     'DROP TABLE IF EXISTS appointments CASCADE',
     'DROP TABLE IF EXISTS chat_messages CASCADE',
     'DROP TABLE IF EXISTS chat_sessions CASCADE',
+    'DROP TABLE IF EXISTS chat_visitors CASCADE',
     'DROP TABLE IF EXISTS visitors CASCADE',
-    'DROP TABLE IF EXISTS users CASCADE'
+    'DROP TABLE IF EXISTS users CASCADE',
+    'DROP TABLE IF EXISTS contactus CASCADE'
   ];
 
   // Drop existing tables
@@ -114,6 +116,35 @@ async function createTables() {
       status VARCHAR(50) DEFAULT 'pending',
       payment_method VARCHAR(50),
       transaction_id VARCHAR(255),
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )`,
+
+    // Contact Us table
+    `CREATE TABLE IF NOT EXISTS contactus (
+      id SERIAL PRIMARY KEY,
+      name VARCHAR(255) NOT NULL,
+      email VARCHAR(255) NOT NULL,
+      phone VARCHAR(20),
+      message TEXT NOT NULL,
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )`,
+
+    // Chat Visitors table — stores visitor info from first-time chat sessions
+    `CREATE TABLE IF NOT EXISTS chat_visitors (
+      id SERIAL PRIMARY KEY,
+      session_token VARCHAR(255) UNIQUE NOT NULL,
+      name VARCHAR(255),
+      email VARCHAR(255),
+      phone VARCHAR(20),
+      profession VARCHAR(255),
+      ip_address VARCHAR(45),
+      country VARCHAR(100),
+      state VARCHAR(100),
+      city VARCHAR(100),
+      latitude DECIMAL(10, 8),
+      longitude DECIMAL(11, 8),
+      user_agent TEXT,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )`

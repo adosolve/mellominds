@@ -55,11 +55,6 @@ export const GlobalFooterDesktop: React.FC = () => {
         <div className="border-t border-gray-200 pt-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <span className="text-xs text-gray-500">&copy; 2026 MelloMinds LLP. All rights reserved.</span>
-            <div className="flex items-center gap-4 text-xs text-gray-500">
-              <a href="https://app.mellominds.co.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-mello-bg transition-colors">Privacy</a>
-              <span>&middot;</span>
-              <a href="https://app.mellominds.co.in/terms-of-service" target="_blank" rel="noopener noreferrer" className="hover:text-mello-bg transition-colors">Terms</a>
-            </div>
           </div>
         </div>
       </div>

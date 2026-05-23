@@ -5,6 +5,7 @@ import { FeaturesSectionDesktop } from './FeaturesSection';
 import { SecuritySectionDesktop } from './SecuritySection';
 import { EnterpriseSectionDesktop } from './EnterpriseSection';
 import { PricingSectionDesktop } from './PricingSection';
+import { ContactSection } from './ContactSection';
 import { GlobalFooterDesktop } from './GlobalFooter';
 
 const LandingPage: React.FC = () => {
@@ -99,6 +100,11 @@ const LandingPage: React.FC = () => {
       {/* S5: Pricing */}
       <div id="pricing">
         <PricingSectionDesktop />
+      </div>
+
+      {/* S6: Contact Us */}
+      <div id="contact">
+        <ContactSection />
       </div>
 
       {/* Global Footer */}

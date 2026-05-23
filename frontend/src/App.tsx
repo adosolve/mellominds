@@ -5,9 +5,9 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import ResponsiveLandingPage from './components/ResponsiveLandingPage';
 import Features from './components/Features';
-import ContactUs from './components/ContactUs';
 import Pricing from './components/Pricing';
 import { FAQsLightbox } from './components/FAQsLightbox';
+import MelloChat from './components/MelloChat';
 
 const AppContent: React.FC = () => {
   const [faqsOpen, setFaqsOpen] = useState(false);
@@ -39,10 +39,11 @@ const AppContent: React.FC = () => {
       <Routes>
         <Route path="/" element={<ResponsiveLandingPage />} />
         <Route path="/features" element={<Features />} />
-        <Route path="/contact" element={<ContactUs />} />
         <Route path="/pricing" element={<Pricing />} />
       </Routes>
       <FAQsLightbox isOpen={faqsOpen} onClose={() => setFaqsOpen(false)} />
+      {/* Mello chatbot — fixed bottom-right on all pages */}
+      <MelloChat />
       <Analytics />
       <SpeedInsights />
     </div>
