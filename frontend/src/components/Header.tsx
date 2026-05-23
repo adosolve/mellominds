@@ -1,15 +1,35 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Logo } from './Logo';
+import { ROUTES, scrollToSection } from '../config/routes';
 
 interface HeaderProps {
-  currentPage?: 'home' | 'features' | 'pricing' | 'faqs' | 'contact';
+  currentPage?: 'home' | 'features' | 'pricing' | 'faqs' | 'contact' | 'privacy-policy' | 'terms-of-service';
 }
 
 export const Header: React.FC<HeaderProps> = ({ currentPage = 'home' }) => {
+  const navigate = useNavigate();
+
+  const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleNavigation = (path: string, hash?: string) => {
+    navigate(path);
+    if (hash) {
+      setTimeout(() => scrollToSection(hash), 100);
+    }
+  };
+
   const navItems = [
-    { href: '/#features', label: 'Features', key: 'features' },
-    { href: '/#pricing', label: 'Pricing', key: 'pricing' },
-    { href: '#faqs', label: 'FAQs', key: 'faqs' },
+    { href: '/', label: 'Features', key: 'features', hash: '#features' },
+    { href: '/', label: 'Pricing', key: 'pricing', hash: '#pricing' },
+    { href: '/faqs', label: 'FAQs', key: 'faqs' },
+    { href: '/', label: 'Contact Us', key: 'contact', hash: '#contact', onClick: handleContactClick },
     { href: 'https://app.mellominds.co.in', label: 'Log In', key: 'login' },
   ];
 
@@ -24,6 +44,18 @@ export const Header: React.FC<HeaderProps> = ({ currentPage = 'home' }) => {
             <a
               key={item.key}
               href={item.href}
+              onClick={(e) => {
+                if (item.key !== 'login') {
+                  e.preventDefault();
+                  if (item.onClick) {
+                    item.onClick(e);
+                  } else if (item.hash) {
+                    handleNavigation(item.href, item.hash);
+                  } else {
+                    handleNavigation(item.href);
+                  }
+                }
+              }}
               {...(item.key === 'login' ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               className={`px-4 py-2 rounded-full transition-colors font-medium text-sm ${
                 currentPage === item.key

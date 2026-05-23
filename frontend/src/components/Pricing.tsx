@@ -19,6 +19,11 @@ const Pricing: React.FC = () => {
         title="Pricing | MelloMinds"
         description="MelloMinds is free forever for therapists. Explore our Free Tier and Enterprise plans."
         path="/pricing"
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: 'Pricing', url: '/pricing' }
+        ]}
+        includeLocalBusinessSchema={true}
       />
       {isMobile ? <PricingMobile /> : <PricingDesktop />}
     </>

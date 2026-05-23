@@ -1,12 +1,31 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Logo } from './Logo';
+import { scrollToSection } from '../config/routes';
 
 interface MobileHeaderProps {
-  currentPage?: 'features' | 'faqs' | 'contact' | 'pricing' | 'privacy' | 'terms' | 'home';
+  currentPage?: 'features' | 'faqs' | 'contact' | 'pricing' | 'privacy-policy' | 'terms-of-service' | 'home';
 }
 
 export const MobileHeader: React.FC<MobileHeaderProps> = ({ currentPage = 'home' }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    setIsMenuOpen(false);
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleNavigation = (path: string, hash?: string) => {
+    setIsMenuOpen(false);
+    navigate(path);
+    if (hash) {
+      setTimeout(() => scrollToSection(hash), 100);
+    }
+  };
 
   return (
     <>
@@ -52,21 +71,25 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({ currentPage = 'home'
 
           {/* Menu items — left aligned, 30px, medium */}
           <nav className="flex flex-col px-8 pt-10 gap-7">
-            <a href="/" onClick={() => setIsMenuOpen(false)}
+            <a href="/" onClick={() => handleNavigation('/')}
               className={`font-medium ${currentPage === 'home' ? 'text-mello-yellow' : 'text-white'}`} style={{fontSize: '30px'}}>
               Home
             </a>
-            <a href="/#features" onClick={() => setIsMenuOpen(false)}
+            <a href="/" onClick={() => handleNavigation('/', '#features')}
               className={`font-medium ${currentPage === 'features' ? 'text-mello-yellow' : 'text-white'}`} style={{fontSize: '30px'}}>
               Features
             </a>
-            <a href="/#pricing" onClick={() => setIsMenuOpen(false)}
+            <a href="/" onClick={() => handleNavigation('/', '#pricing')}
               className={`font-medium ${currentPage === 'pricing' ? 'text-mello-yellow' : 'text-white'}`} style={{fontSize: '30px'}}>
               Pricing
             </a>
-            <a href="#faqs" onClick={() => setIsMenuOpen(false)}
+            <a href="/faqs" onClick={() => handleNavigation('/faqs')}
               className={`font-medium ${currentPage === 'faqs' ? 'text-mello-yellow' : 'text-white'}`} style={{fontSize: '30px'}}>
               FAQs
+            </a>
+            <a href="/" onClick={() => handleContactClick()}
+              className={`font-medium ${currentPage === 'contact' ? 'text-mello-yellow' : 'text-white'}`} style={{fontSize: '30px'}}>
+              Contact Us
             </a>
             <a href="https://app.mellominds.co.in" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}
               className="font-medium text-white" style={{fontSize: '30px'}}>

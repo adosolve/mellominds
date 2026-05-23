@@ -6,6 +6,7 @@ import { initializeDatabase } from './db/init.js';
 import chatRoutes from './routes/chat.js';
 import visitorRoutes from './routes/visitors.js';
 import contactusRoutes from './routes/contactus.js';
+import sitemapRoutes from './routes/sitemap.js';
 
 dotenv.config();
 
@@ -33,6 +34,7 @@ await initializeDatabase();
 app.use('/api/chat', chatRoutes);
 app.use('/api/visitors', visitorRoutes);
 app.use('/api/contactus', contactusRoutes);
+app.use('/api', sitemapRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {

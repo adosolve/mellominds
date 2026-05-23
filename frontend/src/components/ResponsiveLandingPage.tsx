@@ -24,6 +24,8 @@ const ResponsiveLandingPage: React.FC = () => {
         title="MelloMinds | Therapy Practice Management Software for Indian Professionals"
         description="Streamline your mental health practice with MelloMinds. An all-in-one platform for appointments, billing, and therapy notes designed for Indian therapists."
         path="/"
+        includeOrganizationSchema={true}
+        includeLocalBusinessSchema={true}
       />
       {isMobile ? <MobileLandingPage /> : <LandingPage />}
     </>

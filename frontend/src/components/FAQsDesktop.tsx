@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Header } from './Header';
 import { GlobalFooterDesktop } from './GlobalFooter';
+import { SEO } from './SEO';
 
 interface FAQ {
   question: string;
@@ -194,6 +195,18 @@ const FAQsDesktop: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#082421] text-white">
+      {/* SEO with FAQ Schema */}
+      <SEO 
+        title="FAQs | MelloMinds - Therapy Practice Management Software"
+        description="Find answers to frequently asked questions about MelloMinds therapy practice management platform. Learn about features, pricing, security, and more."
+        path="/faqs"
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: 'FAQs', url: '/faqs' }
+        ]}
+        faqSchema={faqSections.flatMap(section => section.faqs)}
+      />
+      
       {/* Header */}
       <Header currentPage="faqs" />
 

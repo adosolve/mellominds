@@ -24,6 +24,11 @@ const Features: React.FC = () => {
         title="Features | MelloMinds - Smart Tools for Therapy Practice Management"
         description="Discover MelloMinds features: smart scheduling, HIPAA-compliant notes, digital intake forms, automated billing, and analytics. Everything therapists need in one platform."
         path="/features"
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: 'Features', url: '/features' }
+        ]}
+        includeOrganizationSchema={true}
       />
       {isMobile ? <FeaturesMobile /> : <FeaturesDesktop />}
     </>
