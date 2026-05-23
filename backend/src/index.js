@@ -19,7 +19,7 @@ app.set('trust proxy', 1);
 app.use(helmet());
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? 'https://mellominds.co.in' 
+    ? ['https://mellominds.co.in', 'https://www.mellominds.co.in'] 
     : ['http://localhost:3000', 'http://localhost:5173'],
   credentials: true
 }));

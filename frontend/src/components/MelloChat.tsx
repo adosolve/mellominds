@@ -88,7 +88,7 @@ const MelloChat: React.FC = () => {
     abortRef.current = new AbortController();
 
     try {
-      const res = await fetch('/api/chat', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: text, sessionToken }),

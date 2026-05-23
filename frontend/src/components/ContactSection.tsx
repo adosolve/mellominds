@@ -46,7 +46,7 @@ export const ContactSection: React.FC = () => {
     e.preventDefault();
     setStatus('loading');
     try {
-      const response = await fetch('http://localhost:5001/api/contactus', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contactus`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
