@@ -158,8 +158,9 @@ export async function generateAIResponse(message, conversationHistory = []) {
     // Ensure we have a valid response
     const trimmedResponse = aiResponse?.trim();
     
-    if (!trimmedResponse || trimmedResponse.length < 15) {
-      console.warn('Short AI response, using contextual fallback:', trimmedResponse);
+    // Only use fallback if response is completely empty or just whitespace
+    if (!trimmedResponse) {
+      console.warn('Empty AI response, using contextual fallback');
       
       // Smart fallback based on message content
       const lowerMsg = message.toLowerCase();
