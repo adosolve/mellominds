@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Header } from './Header';
-import { ContactSection } from './ContactSection';
 import { GlobalFooterDesktop } from './GlobalFooter';
 
 const freeFeatures: { category: string; items: string[] }[] = [
@@ -265,11 +264,6 @@ const PricingDesktop: React.FC = () => {
             </div>
           </div>
 
-        </div>
-
-        {/* Contact Section */}
-        <div id="contact" className="mb-16">
-          <ContactSection />
         </div>
 
         {/* Footer */}

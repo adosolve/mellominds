@@ -4,20 +4,12 @@ import { Logo } from './Logo';
 import { scrollToSection } from '../config/routes';
 
 interface MobileHeaderProps {
-  currentPage?: 'features' | 'faqs' | 'contact' | 'pricing' | 'privacy-policy' | 'terms-of-service' | 'home';
+  currentPage?: 'features' | 'faqs' | 'pricing' | 'privacy-policy' | 'terms-of-service' | 'home';
 }
 
 export const MobileHeader: React.FC<MobileHeaderProps> = ({ currentPage = 'home' }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
-
-  const handleContactClick = () => {
-    setIsMenuOpen(false);
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const handleFaqsClick = () => {
     setIsMenuOpen(false);
@@ -109,8 +101,9 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({ currentPage = 'home'
               Get Started Free
             </a>
             <a
-              href="/"
-              onClick={() => handleContactClick()}
+              href="https://app.mellominds.co.in"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full text-center border border-white text-white px-4 py-3 rounded-full font-semibold text-base"
             >
               Book a Demo

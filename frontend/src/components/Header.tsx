@@ -4,19 +4,11 @@ import { Logo } from './Logo';
 import { ROUTES, scrollToSection } from '../config/routes';
 
 interface HeaderProps {
-  currentPage?: 'home' | 'features' | 'pricing' | 'faqs' | 'contact' | 'privacy-policy' | 'terms-of-service';
+  currentPage?: 'home' | 'features' | 'pricing' | 'faqs' | 'privacy-policy' | 'terms-of-service';
 }
 
 export const Header: React.FC<HeaderProps> = ({ currentPage = 'home' }) => {
   const navigate = useNavigate();
-
-  const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const handleFaqsClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -34,7 +26,6 @@ export const Header: React.FC<HeaderProps> = ({ currentPage = 'home' }) => {
     { href: '/', label: 'Features', key: 'features', hash: '#features' },
     { href: '/', label: 'Pricing', key: 'pricing', hash: '#pricing' },
     { href: '/', label: 'FAQs', key: 'faqs', onClick: handleFaqsClick },
-    { href: '/', label: 'Contact Us', key: 'contact', hash: '#contact', onClick: handleContactClick },
     { href: 'https://app.mellominds.co.in', label: 'Log In', key: 'login' },
   ];
 
@@ -81,8 +72,9 @@ export const Header: React.FC<HeaderProps> = ({ currentPage = 'home' }) => {
           Get Started Free
         </a>
         <a
-          href="/"
-          onClick={handleContactClick}
+          href="https://app.mellominds.co.in"
+          target="_blank"
+          rel="noopener noreferrer"
           className="border border-white text-white bg-transparent px-4 py-2 rounded-full font-semibold text-sm hover:bg-white/10 transition-colors"
         >
           Book a Demo

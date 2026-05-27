@@ -6,7 +6,6 @@ import { FeaturesSectionMobile } from './FeaturesSection';
 import { SecuritySectionMobile } from './SecuritySection';
 import { EnterpriseSectionMobile } from './EnterpriseSection';
 import { PricingSectionMobile } from './PricingSection';
-import { ContactSection } from './ContactSection';
 import { GlobalFooterMobile } from './GlobalFooter';
 
 const MobileLandingPage: React.FC = () => {
@@ -86,11 +85,6 @@ const MobileLandingPage: React.FC = () => {
 
       {/* S5: Pricing */}
       <PricingSectionMobile />
-
-      {/* S6: Contact Us */}
-      <div id="contact">
-        <ContactSection />
-      </div>
 
       {/* Global Footer */}
       <GlobalFooterMobile />
