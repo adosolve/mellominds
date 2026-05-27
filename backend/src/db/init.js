@@ -19,9 +19,6 @@ async function createTables() {
     'DROP TABLE IF EXISTS billing CASCADE',
     'DROP TABLE IF EXISTS session_notes CASCADE',
     'DROP TABLE IF EXISTS appointments CASCADE',
-    'DROP TABLE IF EXISTS chat_messages CASCADE',
-    'DROP TABLE IF EXISTS chat_sessions CASCADE',
-    'DROP TABLE IF EXISTS chat_visitors CASCADE',
     'DROP TABLE IF EXISTS visitors CASCADE',
     'DROP TABLE IF EXISTS users CASCADE',
     'DROP TABLE IF EXISTS contactus CASCADE'
@@ -51,24 +48,6 @@ async function createTables() {
       bio TEXT,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    )`,
-
-    // Chat sessions table
-    `CREATE TABLE IF NOT EXISTS chat_sessions (
-      id SERIAL PRIMARY KEY,
-      session_token VARCHAR(255) UNIQUE NOT NULL,
-      user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
-      started_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-      last_activity TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    )`,
-
-    // Chat messages table
-    `CREATE TABLE IF NOT EXISTS chat_messages (
-      id SERIAL PRIMARY KEY,
-      session_id INTEGER REFERENCES chat_sessions(id) ON DELETE CASCADE,
-      sender_type VARCHAR(50) NOT NULL,
-      message TEXT NOT NULL,
-      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )`,
 
     // Visitors table
@@ -128,25 +107,6 @@ async function createTables() {
       phone VARCHAR(20),
       message TEXT NOT NULL,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    )`,
-
-    // Chat Visitors table — stores visitor info from first-time chat sessions
-    `CREATE TABLE IF NOT EXISTS chat_visitors (
-      id SERIAL PRIMARY KEY,
-      session_token VARCHAR(255) UNIQUE NOT NULL,
-      name VARCHAR(255),
-      email VARCHAR(255),
-      phone VARCHAR(20),
-      profession VARCHAR(255),
-      ip_address VARCHAR(45),
-      country VARCHAR(100),
-      state VARCHAR(100),
-      city VARCHAR(100),
-      latitude DECIMAL(10, 8),
-      longitude DECIMAL(11, 8),
-      user_agent TEXT,
-      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )`
   ];
 

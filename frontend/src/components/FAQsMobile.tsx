@@ -118,7 +118,7 @@ const FAQsMobile: React.FC = () => {
         },
         {
           question: "Are session notes secure?",
-          answer: "Yes, MelloMinds implements encryption for sensitive data including session notes and chat messages to ensure client confidentiality."
+          answer: "Yes, MelloMinds implements encryption for sensitive data including session notes to ensure client confidentiality."
         },
         {
           question: "Can I assign activities or homework to clients?",
@@ -134,8 +134,8 @@ const FAQsMobile: React.FC = () => {
           answer: "You'll receive notifications for new bookings, cancellations, reschedules, payments, client transfer requests, and other important practice events."
         },
         {
-          question: "Is there a chat feature?",
-          answer: "Yes, MelloMinds includes a chat widget for real-time communication with clients, with encryption for security."
+          question: "What features does MelloMinds offer?",
+          answer: "MelloMinds provides appointment scheduling, session notes management, client communication tools, billing integration, and comprehensive practice analytics."
         },
         {
           question: "Can I send reminders to clients?",

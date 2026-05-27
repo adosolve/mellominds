@@ -3,7 +3,6 @@ import cors from 'cors';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
 import { initializeDatabase } from './db/init.js';
-import chatRoutes from './routes/chat.js';
 import visitorRoutes from './routes/visitors.js';
 import contactusRoutes from './routes/contactus.js';
 import sitemapRoutes from './routes/sitemap.js';
@@ -31,7 +30,6 @@ app.use(express.urlencoded({ extended: true }));
 await initializeDatabase();
 
 // Routes
-app.use('/api/chat', chatRoutes);
 app.use('/api/visitors', visitorRoutes);
 app.use('/api/contactus', contactusRoutes);
 app.use('/api', sitemapRoutes);

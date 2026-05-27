@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', countryCode: '+91', phone: '', message: '' });
@@ -72,10 +73,10 @@ export const ContactSection: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-12 items-start">
           {/* Left: Section Header */}
           <div className="w-full md:flex-1 md:max-w-md">
-            <h2 className="font-medium text-gray-900 mb-4" style={{fontSize: '40px'}}>
+            <h2 className="font-medium text-gray-900 mb-4 md:text-4xl text-2xl" style={{fontSize: 'clamp(28px, 5vw, 40px)'}}>
               Get in Touch
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 md:text-base text-sm">
               Have questions about pricing or want a custom quote? Reach out to us and we'll get back to you shortly.
             </p>
           </div>
@@ -98,7 +99,7 @@ export const ContactSection: React.FC = () => {
               <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="flex flex-col">
-                <label htmlFor="name" className="text-sm text-gray-700 font-medium mb-2">Your Name</label>
+                <label htmlFor="name" className="text-sm text-gray-700 font-medium mb-2 md:text-sm" style={{fontSize: '12px'}}>Your Name</label>
                 <input 
                   type="text" 
                   id="name"
@@ -106,12 +107,13 @@ export const ContactSection: React.FC = () => {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="bg-white border border-gray-300 rounded-2xl px-5 py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-mello-bg focus:ring-1 focus:ring-mello-bg transition"
+                  className="bg-white border border-gray-300 rounded-2xl px-5 py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-mello-bg focus:ring-1 focus:ring-mello-bg transition md:text-base"
+                  style={{fontSize: '14px'}}
                   placeholder="Enter your name"
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="email" className="text-sm text-gray-700 font-medium mb-2">Your Email</label>
+                <label htmlFor="email" className="text-sm text-gray-700 font-medium mb-2 md:text-sm" style={{fontSize: '12px'}}>Your Email</label>
                 <input 
                   type="email" 
                   id="email"
@@ -119,41 +121,50 @@ export const ContactSection: React.FC = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="bg-white border border-gray-300 rounded-2xl px-5 py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-mello-bg focus:ring-1 focus:ring-mello-bg transition"
+                  className="bg-white border border-gray-300 rounded-2xl px-5 py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-mello-bg focus:ring-1 focus:ring-mello-bg transition md:text-base"
+                  style={{fontSize: '14px'}}
                   placeholder="Enter email address"
                 />
               </div>
             </div>
 
             <div className="flex flex-col mb-6">
-              <label htmlFor="phone" className="text-sm text-gray-700 font-medium mb-2">Phone Number</label>
+              <label htmlFor="phone" className="text-sm text-gray-700 font-medium mb-2 md:text-sm" style={{fontSize: '12px'}}>Phone Number</label>
               <div className="flex gap-3">
-                <select
-                  name="countryCode"
-                  value={formData.countryCode}
-                  onChange={handleChange}
-                  className="bg-white border border-gray-300 rounded-2xl px-4 py-4 text-gray-900 focus:outline-none focus:border-mello-bg focus:ring-1 focus:ring-mello-bg transition w-32 flex-shrink-0"
-                >
-                  {countryCodes.map((item, index) => (
-                    <option key={index} value={item.code}>
-                      {item.code} {item.country}
-                    </option>
-                  ))}
-                </select>
+                <div className="relative w-32 flex-shrink-0">
+                  <select
+                    name="countryCode"
+                    value={formData.countryCode}
+                    onChange={handleChange}
+                    className="appearance-none w-full bg-white border border-gray-300 rounded-2xl px-4 py-4 text-gray-900 focus:outline-none focus:border-mello-bg focus:ring-1 focus:ring-mello-bg transition md:text-base pr-10"
+                    style={{fontSize: '14px'}}
+                  >
+                    {countryCodes.map((item, index) => (
+                      <option key={index} value={item.code}>
+                        {item.code}
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown 
+                    size={18} 
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none"
+                  />
+                </div>
                 <input 
                   type="tel" 
                   id="phone"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="bg-white border border-gray-300 rounded-2xl px-5 py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-mello-bg focus:ring-1 focus:ring-mello-bg transition flex-1"
+                  className="bg-white border border-gray-300 rounded-2xl px-5 py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-mello-bg focus:ring-1 focus:ring-mello-bg transition flex-1 md:text-base"
+                  style={{fontSize: '14px'}}
                   placeholder="Enter phone number"
                 />
               </div>
             </div>
 
             <div className="flex flex-col mb-6">
-              <label htmlFor="message" className="text-sm text-gray-700 font-medium mb-2">Message</label>
+              <label htmlFor="message" className="text-sm text-gray-700 font-medium mb-2 md:text-sm" style={{fontSize: '12px'}}>Message</label>
               <textarea 
                 id="message"
                 name="message"
@@ -161,20 +172,22 @@ export const ContactSection: React.FC = () => {
                 rows={5}
                 value={formData.message}
                 onChange={handleChange}
-                className="bg-white border border-gray-300 rounded-2xl px-5 py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-mello-bg focus:ring-1 focus:ring-mello-bg transition resize-none"
+                className="bg-white border border-gray-300 rounded-2xl px-5 py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-mello-bg focus:ring-1 focus:ring-mello-bg transition resize-none md:text-base"
+                style={{fontSize: '14px'}}
                 placeholder="Enter your message"
               />
             </div>
 
             {status === 'error' && (
-              <p className="text-red-600 text-sm font-medium text-center mb-6">Failed to send message. Please try again later.</p>
+              <p className="text-red-600 text-sm font-medium text-center mb-6 md:text-sm" style={{fontSize: '12px'}}>Failed to send message. Please try again later.</p>
             )}
 
             <div className="flex justify-center">
               <button 
                 type="submit" 
                 disabled={status === 'loading'}
-                className="bg-mello-bg text-white font-semibold py-3 px-10 rounded-full hover:bg-mello-bg/90 transition disabled:opacity-70 disabled:cursor-not-allowed"
+                className="bg-mello-bg text-white font-semibold py-3 px-10 rounded-full hover:bg-mello-bg/90 transition disabled:opacity-70 disabled:cursor-not-allowed md:text-sm"
+                style={{fontSize: '12px'}}
               >
                 {status === 'loading' ? 'Sending...' : 'Send Message'}
               </button>

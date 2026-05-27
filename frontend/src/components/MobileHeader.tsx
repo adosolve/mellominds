@@ -19,6 +19,11 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({ currentPage = 'home'
     }
   };
 
+  const handleFaqsClick = () => {
+    setIsMenuOpen(false);
+    window.dispatchEvent(new Event('open-faqs'));
+  };
+
   const handleNavigation = (path: string, hash?: string) => {
     setIsMenuOpen(false);
     navigate(path);
@@ -83,13 +88,9 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({ currentPage = 'home'
               className={`font-medium ${currentPage === 'pricing' ? 'text-mello-yellow' : 'text-white'}`} style={{fontSize: '30px'}}>
               Pricing
             </a>
-            <a href="/faqs" onClick={() => handleNavigation('/faqs')}
+            <a href="/" onClick={() => handleFaqsClick()}
               className={`font-medium ${currentPage === 'faqs' ? 'text-mello-yellow' : 'text-white'}`} style={{fontSize: '30px'}}>
               FAQs
-            </a>
-            <a href="/" onClick={() => handleContactClick()}
-              className={`font-medium ${currentPage === 'contact' ? 'text-mello-yellow' : 'text-white'}`} style={{fontSize: '30px'}}>
-              Contact Us
             </a>
             <a href="https://app.mellominds.co.in" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}
               className="font-medium text-white" style={{fontSize: '30px'}}>
@@ -108,9 +109,8 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({ currentPage = 'home'
               Get Started Free
             </a>
             <a
-              href="https://app.mellominds.co.in"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/"
+              onClick={() => handleContactClick()}
               className="w-full text-center border border-white text-white px-4 py-3 rounded-full font-semibold text-base"
             >
               Book a Demo

@@ -20,7 +20,7 @@ const LandingPage: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/Images/therapy-practice-management.jpg"
+            src="https://res.cloudinary.com/dp7pklmjk/image/upload/v1779898669/mellominds/ydkcthpfoxqc2dgolxk7.jpg"
             alt=""
             className="w-full h-full object-cover"
           />

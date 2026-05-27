@@ -10,7 +10,6 @@ import FAQs from './components/FAQs';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
 import { FAQsLightbox } from './components/FAQsLightbox';
-import MelloChat from './components/MelloChat';
 import { scrollToSection } from './config/routes';
 
 const AppContent: React.FC = () => {
@@ -56,15 +55,12 @@ const AppContent: React.FC = () => {
         <Route path="/" element={<ResponsiveLandingPage />} />
         <Route path="/features" element={<Features />} />
         <Route path="/pricing" element={<Pricing />} />
-        <Route path="/faqs" element={<FAQs />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
         {/* 404 - Redirect to home */}
         <Route path="*" element={<ResponsiveLandingPage />} />
       </Routes>
       <FAQsLightbox isOpen={faqsOpen} onClose={() => setFaqsOpen(false)} />
-      {/* Mello chatbot — fixed bottom-right on all pages */}
-      <MelloChat />
       <Analytics />
       <SpeedInsights />
     </div>

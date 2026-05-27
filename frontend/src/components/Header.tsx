@@ -18,6 +18,11 @@ export const Header: React.FC<HeaderProps> = ({ currentPage = 'home' }) => {
     }
   };
 
+  const handleFaqsClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.dispatchEvent(new Event('open-faqs'));
+  };
+
   const handleNavigation = (path: string, hash?: string) => {
     navigate(path);
     if (hash) {
@@ -28,7 +33,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage = 'home' }) => {
   const navItems = [
     { href: '/', label: 'Features', key: 'features', hash: '#features' },
     { href: '/', label: 'Pricing', key: 'pricing', hash: '#pricing' },
-    { href: '/faqs', label: 'FAQs', key: 'faqs' },
+    { href: '/', label: 'FAQs', key: 'faqs', onClick: handleFaqsClick },
     { href: '/', label: 'Contact Us', key: 'contact', hash: '#contact', onClick: handleContactClick },
     { href: 'https://app.mellominds.co.in', label: 'Log In', key: 'login' },
   ];
@@ -76,9 +81,8 @@ export const Header: React.FC<HeaderProps> = ({ currentPage = 'home' }) => {
           Get Started Free
         </a>
         <a
-          href="https://app.mellominds.co.in"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/"
+          onClick={handleContactClick}
           className="border border-white text-white bg-transparent px-4 py-2 rounded-full font-semibold text-sm hover:bg-white/10 transition-colors"
         >
           Book a Demo
